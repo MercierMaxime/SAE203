@@ -173,6 +173,65 @@ export default {
         </div>
       </div>
     </div>
+
+    <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos places</p>
+
+    <p class="pb-3 text-center text-black sm:text-base lg:text-xl xl:text-2xl">
+      <span class="text-center text-black sm:text-base lg:text-xl xl:text-2xl">Nous avons l’honneur de vous proposez un total de </span
+      ><span class="text-center font-bold text-black sm:text-base lg:text-xl xl:text-2xl">500</span
+      ><span class="text-center text-black sm:text-base lg:text-xl xl:text-2xl"> tickets disponibles par concert !</span>
+    </p>
+
+    <p class="text-center text-black sm:text-base lg:text-xl xl:text-2xl">
+      <span class="text-left text-black sm:text-base lg:text-xl xl:text-2xl">Tarif unique : </span
+      ><span class="text-left font-bold text-black sm:text-base lg:text-xl xl:text-2xl">20 €</span
+      ><span class="text-left text-black sm:text-base lg:text-xl xl:text-2xl"> par personne (+18 ans)</span>
+    </p>
+
+    <p class="m-auto h-4 w-64 pb-20 text-center text-[#322e88] sm:text-xs lg:text-lg xl:text-xl">(Seulement 347 places restantes !)</p>
+
+    <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos artistes préférés</p>
+
+    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+      <img src="../components/img/Slyvain_GUILLAUME.png" class="flex-grow self-stretch rounded-tl-[25px] rounded-tr-[25px] object-cover" />
+      <div
+        class="
+          relative
+          flex flex-grow flex-col
+          items-center
+          justify-center
+          gap-5
+          self-stretch
+          rounded-bl-xl rounded-br-xl
+          bg-[#322e88]/60
+          px-1.5
+          py-2
+        "
+      >
+        <p class="flex-grow self-stretch text-center text-2xl">
+          <span class="flex-grow self-stretch text-center text-2xl text-white">Slyvain GUILLAUME</span>
+          <br />
+          <span class="flex-grow self-stretch text-center text-base text-white">dans le rôle de</span>
+          <br />
+          <span class="flex-grow self-stretch text-center text-2xl text-white">Maxime LE FORESTIER</span>
+        </p>
+        <div
+          class="
+            relative
+            flex flex-shrink-0 flex-grow-0 flex-col
+            items-center
+            justify-center
+            gap-2.5
+            rounded-[15px]
+            bg-[#54bb30]/80
+            px-5
+            py-1.5
+          "
+        >
+          <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
