@@ -15,10 +15,10 @@ export default {
   <div class="bg-gradient-to-bl from-indigo-500 to-sky-400 pt-6">
     <div class="m-auto flex w-4/5 flex-col items-center justify-center gap-4 rounded-lg bg-white">
       <div class="relative flex flex-grow flex-col items-center justify-center gap-2 self-stretch pt-3">
-        <p class="flex text-center text-xl font-bold text-black">“Vieux Comme 9(0)”, c’est quoi ?</p>
+        <p class="flex text-center font-bold text-black sm:text-xl lg:text-3xl xl:text-5xl">“Vieux Comme 9(0)”, c’est quoi ?</p>
       </div>
-      <div class="relative flex flex-col items-center justify-center gap-2.5 self-stretch">
-        <p class="flex-shrink-0 flex-grow-0 text-left text-base text-black">
+      <div class="relative flex flex-col items-center justify-center gap-2.5 self-stretch px-2">
+        <p class="flex-shrink-0 flex-grow-0 px-2 text-left text-base text-black">
           <span class="flex-shrink-0 flex-grow-0 px-2 text-left text-base text-black"
             >C’est un festival qui retrace les souvenirs de vôtre enfance en vous replongeant dans le folklore des années phares que sont
             les années 90.</span
