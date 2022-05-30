@@ -18,6 +18,6 @@ export default {
       <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Contact</p>
       <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Mentions légales</p>
     </div>
-    <Logo class="m-auto" />
+    <Logo class="m-auto pt-2" />
   </footer>
 </template>
