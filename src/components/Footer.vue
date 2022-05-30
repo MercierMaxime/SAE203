@@ -11,12 +11,14 @@ export default {
 <template>
   <footer class="bg-Violet-60% bg-opacity-75">
     <div class="grid grid-cols-3 pl-6">
-      <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Le Festival</p>
+      <RouterLink to="/Festival"><p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Le Festival</p></RouterLink>
       <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Billeterie</p>
       <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">La ville d'Aubenas</p>
       <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Evénements</p>
       <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Contact</p>
-      <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Mentions légales</p>
+      <RouterLink to="/Mentions"
+        ><p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Mentions légales</p></RouterLink
+      >
     </div>
     <Logo class="m-auto pt-2" />
   </footer>
