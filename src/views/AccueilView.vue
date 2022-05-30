@@ -1,14 +1,15 @@
 <script>
-import Header from "../components/Header.vue";
+import Headerpart from "../components/Header.vue";
+import Footerpart from "../components/Footer.vue";
 
 export default {
   name: "App",
-  components: { Header },
+  components: { Headerpart, Footerpart },
 };
 </script>
 
 <template>
-  <Header />
+  <Headerpart />
   <img src="../components/img/Illustration_1.png" alt="Illustration1" />
 
   <div class="bg-gradient-to-bl from-indigo-500 to-sky-400 pt-6">
@@ -222,7 +223,7 @@ export default {
             items-center
             justify-center
             gap-2.5
-            rounded-[15px]
+            rounded-lg
             bg-[#54bb30]/80
             px-5
             py-1.5
@@ -263,7 +264,7 @@ export default {
             items-center
             justify-center
             gap-2.5
-            rounded-[15px]
+            rounded-lg
             bg-[#54bb30]/80
             px-5
             py-1.5
@@ -304,7 +305,7 @@ export default {
             items-center
             justify-center
             gap-2.5
-            rounded-[15px]
+            rounded-lg
             bg-[#54bb30]/80
             px-5
             py-1.5
@@ -345,7 +346,7 @@ export default {
             items-center
             justify-center
             gap-2.5
-            rounded-[15px]
+            rounded-lg
             bg-[#54bb30]/80
             px-5
             py-1.5
@@ -356,5 +357,6 @@ export default {
       </div>
     </div>
   </div>
+  <Footerpart />
 </template>
 
