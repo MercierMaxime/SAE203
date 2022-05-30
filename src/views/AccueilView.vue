@@ -34,9 +34,9 @@ export default {
       </div>
     </div>
 
-    <p class="pb-10 pt-20 text-center font-beckman sm:text-2xl lg:text-4xl xl:text-6xl">Retrouver vos concerts favorits</p>
+    <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos concerts favorits</p>
 
-    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center">
+    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
       <img src="../components/img/Concert_1.png" class="flex-grow self-stretch rounded-tl-lg rounded-tr-lg object-none" />
       <div class="relative flex flex-grow flex-col items-center justify-center gap-2.5 self-stretch bg-[#c4c4c4] px-[18px] py-2.5">
         <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-black">Jean FERRAT - Interprêté par Hervé ROGNARD</p>
@@ -48,7 +48,7 @@ export default {
           flex flex-grow flex-col
           items-center
           justify-center
-          gap-[30px]
+          gap-8
           self-stretch
           rounded-bl-lg rounded-br-lg
           bg-white
@@ -60,6 +60,41 @@ export default {
           <span class="flex-grow self-stretch text-center text-2xl text-[#54bb30]"> 14 Avril 2023</span
           ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
           ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">18H45</span>
+        </p>
+        <div
+          class="relative flex flex-shrink-0 flex-grow-0 flex-col items-center justify-center gap-2.5 rounded-lg bg-[#ffe607]/40 px-10 py-1"
+        >
+          <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+      <img src="../components/img/Concert_2.png" class="flex-grow self-stretch rounded-tl-lg rounded-tr-lg object-none" />
+      <div class="relative flex flex-grow flex-col items-center justify-center gap-2.5 self-stretch bg-[#c4c4c4] px-[18px] py-2.5">
+        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-black">
+          Maxime LE FORESTIER - Interprêté par Slyvain GUILLAUME
+        </p>
+        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-[#322e88]">Le château d’Aubenas</p>
+      </div>
+      <div
+        class="
+          relative
+          flex flex-grow flex-col
+          items-center
+          justify-center
+          gap-8
+          self-stretch
+          rounded-bl-lg rounded-br-lg
+          bg-white
+          px-3
+          py-3
+        "
+      >
+        <p class="flex-grow self-stretch text-center text-2xl">
+          <span class="flex-grow self-stretch text-center text-2xl text-[#54bb30]"> 14 Avril 2023</span
+          ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
+          ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">20h15</span>
         </p>
         <div
           class="relative flex flex-shrink-0 flex-grow-0 flex-col items-center justify-center gap-2.5 rounded-lg bg-[#ffe607]/40 px-10 py-1"
