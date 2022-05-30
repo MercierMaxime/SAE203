@@ -37,7 +37,41 @@ export default {
           stroke-linejoin="round"
         ></path>
       </svg>
-      <p class="flex-grow text-left text-black sm:text-base lg:text-xl xl:text-3xl">Jean Ferrat par Hervé ROGNARD</p>
+      <p class="flex-grow text-center text-black sm:text-base lg:text-xl xl:text-3xl">Jean Ferrat par Hervé ROGNARD</p>
+    </div>
+
+    <p class="px-5 pt-6 text-left text-white sm:text-xl lg:text-3xl xl:text-5xl">Nombre de places :</p>
+
+    <div class="relative m-auto mt-5 flex w-2/5 items-center justify-center gap-5 rounded-lg border-4 border-black bg-white px-2 py-[5px]">
+      <svg
+        width="30"
+        height="40"
+        viewBox="0 0 86 80"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="relative flex-grow self-stretch"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <path d="M64.5 40H21.5" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <p class="flex-grow self-stretch text-center font-bold text-black sm:text-xl lg:text-3xl xl:text-5xl">0</p>
+      <svg
+        width="30"
+        height="40"
+        viewBox="0 0 86 80"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="relative flex-grow self-stretch"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <path
+          d="M43.0002 13.3333V66.6666M71.6668 40L14.3335 40"
+          stroke="#111827"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
     </div>
   </div>
 </template>
