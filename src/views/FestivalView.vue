@@ -74,5 +74,16 @@ export default {
         </p>
       </div>
     </div>
+
+    <p class="pt-8 pb-4 text-center font-bold text-white sm:text-2xl lg:text-3xl xl:text-5xl">La seule chose qui manque,</p>
+
+    <p class="pb-10 text-center font-bold text-Violet-foncer sm:text-2xl lg:text-3xl xl:text-5xl">C’EST VOUS !</p>
+
+    <div class="flex flex-col items-center justify-center gap-2 pb-20 pt-5">
+      <div class="relative flex flex-col items-center justify-center gap-1 rounded-lg bg-[#322e88] px-5 py-3">
+        <p class="px-20 py-1 text-center text-white sm:text-lg lg:text-2xl xl:text-4xl">Rejoingnez-nous !</p>
+      </div>
+    </div>
   </div>
+  <Footerpart />
 </template>
