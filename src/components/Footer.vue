@@ -12,7 +12,7 @@ export default {
   <footer class="bg-Violet-60% bg-opacity-75">
     <div class="grid grid-cols-3 pl-6">
       <RouterLink to="/Festival"><p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Le Festival</p></RouterLink>
-      <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Billeterie</p>
+      <RouterLink to="/Billeterie"><p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Billeterie</p></RouterLink>
       <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">La ville d'Aubenas</p>
       <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Evénements</p>
       <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Contact</p>
