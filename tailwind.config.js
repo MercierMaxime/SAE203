@@ -6,20 +6,20 @@ module.exports = {
   theme: {
     extend: {
       "colors": {
-        "Violet - 80%": "#322e88",
+        "Violet-80%": "#322e88",
         "Violet-foncer": "#322e88",
         "Noir": "#000000",
-        "Jaune - 40%": "#ffe607",
+        "Jaune-40%": "#ffe607",
         "Vert": "#54bb30",
-        "Bleu ciel": "#29c0f1",
+        "Bleu-ciel": "#29c0f1",
         "Gris": "#c4c4c4",
         "Blanc": "#ffffff",
-        "Vert - 80%": "#54bb30",
-        "Violet- 60%": "#322e88",
-        "Bleu clair": "#90d8f8",
-        "Gris foncer": "#5e6468",
+        "Vert-80%": "#54bb30",
+        "Violet-60%": "#322e88",
+        "Bleu-clair": "#90d8f8",
+        "Gris-foncer": "#5e6468",
         "Jaune": "#ffe607",
-        "Bleu foncer": "#1951a5"
+        "Bleu-foncer": "#1951a5"
       },
       "fontSize": {
         "sm": "0.75rem",

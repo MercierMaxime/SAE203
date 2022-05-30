@@ -3,9 +3,8 @@
 </template>
 
 <script>
-import IconLogo from "./components/icones/Logo.vue";
-import { FilmIcon } from "@heroicons/vue/outline";
+import Logo from "./components/icones/Logo_petit.vue";
 export default {
-  components: { IconLogo, FilmIcon },
+  components: { Logo },
 };
 </script>

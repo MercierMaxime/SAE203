@@ -1,12 +1,20 @@
 <script>
-import Logo from "./icones/Logo.vue";
-import Navigation from "./icones/Navbar.vue";
+import Logo from "./icones/Logo_petit.vue";
 
 export default {
-  components: { Logo, Navigation },
+  name: "App",
+  components: { Logo },
 };
 </script>
 
 <template>
-  <header></header>
+  <header class="bg-Jaune-40% p-2">
+    <div class="grid-wrap-2 m-4 grid grid-cols-5 space-x-4">
+      <p class="pt-8 font-helvetica text-black sm:text-lg lg:text-xl xl:text-3xl">Le Festival</p>
+      <p class="pt-8 font-helvetica text-black sm:text-lg lg:text-xl xl:text-3xl">Evénements</p>
+      <Logo class="pb-2" />
+      <p class="pt-8 font-helvetica text-black sm:text-lg lg:text-xl xl:text-3xl">Billeterie</p>
+      <p class="pt-8 font-helvetica text-black sm:text-lg lg:text-xl xl:text-3xl">Contact</p>
+    </div>
+  </header>
 </template>
