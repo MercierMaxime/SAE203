@@ -232,6 +232,47 @@ export default {
         </div>
       </div>
     </div>
+
+    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+      <img src="../components/img/Roger_GUICHARD.png" class="flex-grow self-stretch rounded-tl-[25px] rounded-tr-[25px] object-cover" />
+      <div
+        class="
+          relative
+          flex flex-grow flex-col
+          items-center
+          justify-center
+          gap-5
+          self-stretch
+          rounded-bl-xl rounded-br-xl
+          bg-[#322e88]/60
+          px-1.5
+          py-2
+        "
+      >
+        <p class="flex-grow self-stretch text-center text-2xl">
+          <span class="flex-grow self-stretch text-center text-2xl text-white">Roger GUICHARD</span>
+          <br />
+          <span class="flex-grow self-stretch text-center text-base text-white">dans le rôle de</span>
+          <br />
+          <span class="flex-grow self-stretch text-center text-2xl text-white">Charles AZNAVOUR</span>
+        </p>
+        <div
+          class="
+            relative
+            flex flex-shrink-0 flex-grow-0 flex-col
+            items-center
+            justify-center
+            gap-2.5
+            rounded-[15px]
+            bg-[#54bb30]/80
+            px-5
+            py-1.5
+          "
+        >
+          <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
