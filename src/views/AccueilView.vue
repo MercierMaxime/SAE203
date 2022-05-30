@@ -103,6 +103,41 @@ export default {
         </div>
       </div>
     </div>
+
+    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+      <img src="../components/img/Concert_3.png" class="flex-grow self-stretch rounded-tl-lg rounded-tr-lg object-none" />
+      <div class="relative flex flex-grow flex-col items-center justify-center gap-2.5 self-stretch bg-[#c4c4c4] px-[18px] py-2.5">
+        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-black">
+          Charles AZNAVOUR - Interprêté par Roger GUICHARD
+        </p>
+        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-[#322e88]">Salle “Le Bournot”</p>
+      </div>
+      <div
+        class="
+          relative
+          flex flex-grow flex-col
+          items-center
+          justify-center
+          gap-8
+          self-stretch
+          rounded-bl-lg rounded-br-lg
+          bg-white
+          px-3
+          py-3
+        "
+      >
+        <p class="flex-grow self-stretch text-center text-2xl">
+          <span class="flex-grow self-stretch text-center text-2xl text-[#54bb30]"> 14 Avril 2023</span
+          ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
+          ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">21h30</span>
+        </p>
+        <div
+          class="relative flex flex-shrink-0 flex-grow-0 flex-col items-center justify-center gap-2.5 rounded-lg bg-[#ffe607]/40 px-10 py-1"
+        >
+          <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
