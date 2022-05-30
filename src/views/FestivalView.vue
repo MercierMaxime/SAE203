@@ -36,7 +36,7 @@ export default {
       </div>
     </div>
 
-    <div class="m-auto mb-10 flex w-4/5 flex-col items-center justify-center gap-4 rounded-lg bg-white">
+    <div class="m-auto mb-10 flex w-4/5 flex-col items-center justify-center gap-4 rounded-lg bg-white pb-7">
       <div class="relative flex flex-grow flex-col items-center justify-center gap-2 self-stretch pt-3">
         <p class="flex text-center text-3xl font-bold text-Bleu-ciel">Sa convivialité :</p>
       </div>
@@ -49,6 +49,27 @@ export default {
             >Ainsi que nouer de magnifiques relations avec les différentes catégories d’âge de la population, pouvoir faire revivre les
             meilleurs moments de nos aînés et de faire découvrir aux plus jeunes, les folies et les joies de la musique folkorique des
             années 90 !</span
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="m-auto mb-10 flex w-4/5 flex-col items-center justify-center gap-4 rounded-lg bg-white pb-7">
+      <div class="relative flex flex-grow flex-col items-center justify-center gap-2 self-stretch pt-3">
+        <p class="flex text-center text-3xl font-bold text-Violet-foncer">Sa générosité :</p>
+      </div>
+      <div class="relative flex flex-col items-center justify-center gap-2.5 self-stretch">
+        <p class="flex-shrink-0 flex-grow-0 px-2 text-left text-base text-black">
+          <span class="flex-shrink-0 flex-grow-0 px-2 text-left text-base text-black"
+            >Notre objectif principal, pouvoir faire vivre des sensations uniques dans les villages et dans les petites villes, de CHAQUE
+            département français ! </span
+          ><br /><span class="flex-shrink-0 flex-grow-0 px-2 text-left text-base text-black"
+            >On ne laissera aucun coin de France sans avoir pu faire vibrer et faire danser ceux et celles qui apprécient chaque jour, les
+            plaisirs de la musique française !</span
+          >
+          <br /><span class="flex-shrink-0 flex-grow-0 px-2 text-left text-base text-black"
+            >Nous souhaitons pouvoir vous aussi, vous faire vivre les sensations qui nous emballent quand à l’idée incroyable de pouvoir
+            faire revivre à la France, sa meilleure époque musicale !</span
           >
         </p>
       </div>
