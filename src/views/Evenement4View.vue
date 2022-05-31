@@ -16,7 +16,7 @@ export default {
       <div
         class="relative flex flex-grow flex-col items-center justify-center self-stretch rounded-t-lg bg-Jaune-40% bg-opacity-60 pt-3 pb-2"
       >
-        <p class="flex text-center font-bold text-black sm:text-xl lg:text-3xl xl:text-5xl">Maxime LE FORESTIER par Slyvain GUILLAUME</p>
+        <p class="flex text-center font-bold text-black sm:text-xl lg:text-3xl xl:text-5xl">Jean-Jacques GOLDMAN par Flavien LEMONT</p>
       </div>
 
       <div class="relative flex flex-col items-center justify-center gap-2.5 self-stretch px-2 pt-8">
@@ -25,7 +25,7 @@ export default {
             >Retrouvez votre chanteur préféré le :</span
           ><span
             class="flex-shrink-0 flex-grow-0 px-2 text-center text-Violet-foncer underline-offset-2 sm:text-base lg:text-xl xl:text-3xl"
-            >14 Avril 2023 à 20h15</span
+            >14 Avril 2023 à 23h15</span
           >
         </p>
 
@@ -39,7 +39,7 @@ export default {
         <p class="flex-shrink-0 flex-grow-0 px-2 pt-8 text-center text-base text-black">
           <span class="flex-shrink-0 flex-grow-0 px-2 text-center font-bold text-black sm:text-base lg:text-xl xl:text-3xl">Durée :</span
           ><span class="flex-shrink-0 flex-grow-0 px-2 text-center text-black underline-offset-2 sm:text-base lg:text-xl xl:text-3xl"
-            >2H30
+            >2H
           </span>
         </p>
 
