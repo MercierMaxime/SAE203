@@ -110,7 +110,7 @@ export default {
     />
 
     <p class="px-20 pt-14 text-center text-white sm:text-lg lg:text-xl xl:text-2xl">
-      Veuillez remplir les conditions ci-dessous pour que nous puissions répondre dans les plus brefs délais à vos questions.
+      Nous nous engageons à vous donnez une réponse précise dans les délais les plus courts possibles.
     </p>
 
     <div class="flex flex-col items-center justify-center gap-10 pt-12 pb-20">
