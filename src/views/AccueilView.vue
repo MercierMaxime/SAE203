@@ -28,11 +28,13 @@ export default {
           >
         </p>
       </div>
-      <div class="flex flex-col items-center justify-center gap-2 pb-3">
-        <div class="relative flex flex-col items-center justify-center gap-1 rounded-lg bg-[#322e88] px-5 py-3">
-          <p class="text-center text-base text-white">Plus de détails</p>
+      <RouterLink to="/Festival"
+        ><div class="flex flex-col items-center justify-center gap-2 pb-3">
+          <div class="relative flex flex-col items-center justify-center gap-1 rounded-lg bg-[#322e88] px-5 py-3">
+            <p class="text-center text-base text-white">Plus de détails</p>
+          </div>
         </div>
-      </div>
+      </RouterLink>
     </div>
 
     <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos concerts favorits</p>
@@ -191,11 +193,13 @@ export default {
 
     <p class="m-auto h-4 w-64 text-center text-[#322e88] sm:text-base lg:text-lg xl:text-xl">(Seulement 347 places restantes !)</p>
 
-    <div class="flex flex-col items-center justify-center gap-2 pb-3 pt-20">
-      <div class="relative flex flex-col items-center justify-center gap-1 rounded-lg bg-[#322e88] px-5 py-3">
-        <p class="px-20 py-1 text-center text-white sm:text-lg lg:text-2xl xl:text-4xl">Réservation</p>
-      </div>
-    </div>
+    <RouterLink to="/Billeterie"
+      ><div class="flex flex-col items-center justify-center gap-2 pb-3 pt-20">
+        <div class="relative flex flex-col items-center justify-center gap-1 rounded-lg bg-[#322e88] px-5 py-3">
+          <p class="px-20 py-1 text-center text-white sm:text-lg lg:text-2xl xl:text-4xl">Réservation</p>
+        </div>
+      </div></RouterLink
+    >
 
     <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos artistes préférés</p>
 
