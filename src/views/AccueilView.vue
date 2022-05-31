@@ -280,21 +280,23 @@ export default {
             <br />
             <span class="flex-grow self-stretch text-center text-2xl text-white">Maxime LE FORESTIER</span>
           </p>
-          <div
-            class="
-              relative
-              flex flex-shrink-0 flex-grow-0 flex-col
-              items-center
-              justify-center
-              gap-2.5
-              rounded-lg
-              bg-[#54bb30]/80
-              px-5
-              py-1.5
-            "
-          >
-            <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
-          </div>
+          <RouterLink to="/Evenement3">
+            <div
+              class="
+                relative
+                flex flex-shrink-0 flex-grow-0 flex-col
+                items-center
+                justify-center
+                gap-2.5
+                rounded-lg
+                bg-[#54bb30]/80
+                px-5
+                py-1.5
+              "
+            >
+              <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Voir son prochain concert</p>
+            </div>
+          </RouterLink>
         </div>
       </div>
 
@@ -321,21 +323,23 @@ export default {
             <br />
             <span class="flex-grow self-stretch text-center text-2xl text-white">Charles AZNAVOUR</span>
           </p>
-          <div
-            class="
-              relative
-              flex flex-shrink-0 flex-grow-0 flex-col
-              items-center
-              justify-center
-              gap-2.5
-              rounded-lg
-              bg-[#54bb30]/80
-              px-5
-              py-1.5
-            "
-          >
-            <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
-          </div>
+          <RouterLink to="/Evenement2">
+            <div
+              class="
+                relative
+                flex flex-shrink-0 flex-grow-0 flex-col
+                items-center
+                justify-center
+                gap-2.5
+                rounded-lg
+                bg-[#54bb30]/80
+                px-5
+                py-1.5
+              "
+            >
+              <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Voir son prochain concert</p>
+            </div>
+          </RouterLink>
         </div>
       </div>
 
@@ -362,21 +366,23 @@ export default {
             <br />
             <span class="flex-grow self-stretch text-center text-2xl text-white">Jean-Jacques GOLDMAN</span>
           </p>
-          <div
-            class="
-              relative
-              flex flex-shrink-0 flex-grow-0 flex-col
-              items-center
-              justify-center
-              gap-2.5
-              rounded-lg
-              bg-[#54bb30]/80
-              px-5
-              py-1.5
-            "
-          >
-            <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
-          </div>
+          <RouterLink to="/Evenement4">
+            <div
+              class="
+                relative
+                flex flex-shrink-0 flex-grow-0 flex-col
+                items-center
+                justify-center
+                gap-2.5
+                rounded-lg
+                bg-[#54bb30]/80
+                px-5
+                py-1.5
+              "
+            >
+              <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Voir son prochain concert</p>
+            </div>
+          </RouterLink>
         </div>
       </div>
 
@@ -403,21 +409,23 @@ export default {
             <br />
             <span class="flex-grow self-stretch text-center text-2xl text-white">Jean FERRAT</span>
           </p>
-          <div
-            class="
-              relative
-              flex flex-shrink-0 flex-grow-0 flex-col
-              items-center
-              justify-center
-              gap-2.5
-              rounded-lg
-              bg-[#54bb30]/80
-              px-5
-              py-1.5
-            "
-          >
-            <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
-          </div>
+          <RouterLink to="/Evenement">
+            <div
+              class="
+                relative
+                flex flex-shrink-0 flex-grow-0 flex-col
+                items-center
+                justify-center
+                gap-2.5
+                rounded-lg
+                bg-[#54bb30]/80
+                px-5
+                py-1.5
+              "
+            >
+              <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Voir son prochain concert</p>
+            </div>
+          </RouterLink>
         </div>
       </div>
     </div>
