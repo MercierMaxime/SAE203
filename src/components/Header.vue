@@ -14,7 +14,7 @@ export default {
       <p class="pt-8 font-helvetica text-black sm:text-lg lg:text-xl xl:text-3xl">Evénements</p>
       <RouterLink to="/"><Logo class="pb-2" /></RouterLink>
       <RouterLink to="/Billeterie"><p class="pt-8 font-helvetica text-black sm:text-lg lg:text-xl xl:text-3xl">Billeterie</p></RouterLink>
-      <p class="pt-8 font-helvetica text-black sm:text-lg lg:text-xl xl:text-3xl">Contact</p>
+      <RouterLink to="/Contact"><p class="pt-8 font-helvetica text-black sm:text-lg lg:text-xl xl:text-3xl">Contact</p></RouterLink>
     </div>
   </header>
 </template>
