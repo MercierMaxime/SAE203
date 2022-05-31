@@ -62,22 +62,12 @@ export default {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
 
-        <p class="flex-shrink-0 flex-grow-0 px-2 pt-8 text-center text-base text-black">
+        <p class="flex-shrink-0 flex-grow-0 px-2 pb-8 pt-8 text-center text-base text-black">
           <span class="flex-shrink-0 flex-grow-0 px-2 text-center font-bold text-black sm:text-base lg:text-xl xl:text-3xl"
             >N° de téléphone de l’établissement :</span
           ><span class="flex-shrink-0 flex-grow-0 px-2 text-center text-black underline-offset-2 sm:text-base lg:text-xl xl:text-3xl"
             >04 75 87 81 11
           </span>
-        </p>
-
-        <p class="flex-shrink-0 flex-grow-0 px-2 pt-8 pb-12 text-center text-base text-black">
-          <span class="flex-shrink-0 flex-grow-0 px-2 text-center font-bold text-black sm:text-base lg:text-xl xl:text-3xl"
-            >Site Internet de l’établissement :</span
-          ><a
-            class="flex-shrink-0 flex-grow-0 px-2 text-center text-Bleu-ciel underline-offset-2 sm:text-base lg:text-xl xl:text-3xl"
-            href="http://www.sallelebournot.fr/"
-            >Salle "Le Bournot"</a
-          >
         </p>
       </div>
     </div>
