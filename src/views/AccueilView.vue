@@ -219,7 +219,7 @@ export default {
       </div>
     </div>
 
-    <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos places</p>
+    <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Réserver vos places</p>
 
     <p class="pb-3 text-center text-black sm:text-base lg:text-xl xl:text-2xl">
       <span class="text-center text-black sm:text-base lg:text-xl xl:text-2xl">Nous avons l’honneur de vous proposez un total de </span
