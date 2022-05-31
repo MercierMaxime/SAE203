@@ -81,5 +81,41 @@ export default {
       <img src="../components/img/Visa.png" alt="Carte VISA" />
       <img src="../components/img/MasterCard.png" alt="Carte MasterCard" />
     </div>
+
+    <div class="mt-20 justify-center text-center">
+      <div>
+        <div class="form-check">
+          <input
+            class="
+              form-check-input
+              xl:h-30 xl:w-30
+              sm:h-15 sm:w-15
+              float-center
+              mt-1
+              mr-2
+              cursor-pointer
+              rounded-sm
+              border border-gray-300
+              bg-white bg-contain bg-center bg-no-repeat
+              text-center
+              transition
+              duration-200
+              checked:border-blue-500 checked:bg-white
+              focus:outline-none
+              lg:h-20 lg:w-20
+            "
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label inline-block text-white sm:text-base lg:text-xl xl:text-3xl" for="flexCheckDefault">
+            Vous vous engagez à accepter les conditions générales,
+          </label>
+          <label class="form-check-label inline-block text-white sm:text-base lg:text-xl xl:text-3xl" for="flexCheckDefault">
+            ainsi que les règles de paiements européennes (DSP2).
+          </label>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
