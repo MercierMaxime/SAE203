@@ -13,7 +13,9 @@ export default {
     <div class="grid grid-cols-3 pl-6">
       <RouterLink to="/Festival"><p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Le Festival</p></RouterLink>
       <RouterLink to="/Billeterie"><p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Billeterie</p></RouterLink>
-      <p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">La ville d'Aubenas</p>
+      <a class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl" href="http://www.sallelebournot.fr/"
+        >La ville d'Aubenas</a
+      >
       <RouterLink to="/Evenement"><p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Evénements</p></RouterLink>
       <RouterLink to="/Contact"><p class="pt-8 font-helvetica text-white sm:text-lg lg:text-xl xl:text-3xl">Contact</p></RouterLink>
       <RouterLink to="/Mentions"
