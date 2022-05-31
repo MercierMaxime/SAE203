@@ -39,140 +39,182 @@ export default {
 
     <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos concerts favorits</p>
 
-    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
-      <img src="../components/img/Concert_1.png" class="flex-grow self-stretch rounded-tl-lg rounded-tr-lg object-none" />
-      <div class="relative flex flex-grow flex-col items-center justify-center gap-2.5 self-stretch bg-[#c4c4c4] px-[18px] py-2.5">
-        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-black">Jean FERRAT - Interprêté par Hervé ROGNARD</p>
-        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-[#322e88]">Salle “Le Bournot”</p>
-      </div>
-      <div
-        class="
-          relative
-          flex flex-grow flex-col
-          items-center
-          justify-center
-          gap-8
-          self-stretch
-          rounded-bl-lg rounded-br-lg
-          bg-white
-          px-3
-          py-3
-        "
-      >
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-2xl text-[#54bb30]"> 14 Avril 2023</span
-          ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
-          ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">18H45</span>
-        </p>
+    <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(350px,1fr))]">
+      <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+        <img src="../components/img/Concert_1.png" class="flex-grow self-stretch rounded-tl-lg rounded-tr-lg object-none" />
+        <div class="relative flex flex-grow flex-col items-center justify-center gap-2.5 self-stretch bg-[#c4c4c4] px-[18px] py-2.5">
+          <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-black">Jean FERRAT - Interprêté par Hervé ROGNARD</p>
+          <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-[#322e88]">Salle “Le Bournot”</p>
+        </div>
         <div
-          class="relative flex flex-shrink-0 flex-grow-0 flex-col items-center justify-center gap-2.5 rounded-lg bg-[#ffe607]/40 px-10 py-1"
+          class="
+            relative
+            flex flex-grow flex-col
+            items-center
+            justify-center
+            gap-8
+            self-stretch
+            rounded-bl-lg rounded-br-lg
+            bg-white
+            px-3
+            py-3
+          "
         >
-          <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+          <p class="flex-grow self-stretch text-center text-2xl">
+            <span class="flex-grow self-stretch text-center text-2xl text-[#54bb30]"> 14 Avril 2023</span
+            ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
+            ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">18H45</span>
+          </p>
+          <div
+            class="
+              relative
+              flex flex-shrink-0 flex-grow-0 flex-col
+              items-center
+              justify-center
+              gap-2.5
+              rounded-lg
+              bg-[#ffe607]/40
+              px-10
+              py-1
+            "
+          >
+            <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
-      <img src="../components/img/Concert_2.png" class="flex-grow self-stretch rounded-tl-lg rounded-tr-lg object-none" />
-      <div class="relative flex flex-grow flex-col items-center justify-center gap-2.5 self-stretch bg-[#c4c4c4] px-[18px] py-2.5">
-        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-black">
-          Maxime LE FORESTIER - Interprêté par Slyvain GUILLAUME
-        </p>
-        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-[#322e88]">Le château d’Aubenas</p>
-      </div>
-      <div
-        class="
-          relative
-          flex flex-grow flex-col
-          items-center
-          justify-center
-          gap-8
-          self-stretch
-          rounded-bl-lg rounded-br-lg
-          bg-white
-          px-3
-          py-3
-        "
-      >
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-2xl text-[#54bb30]"> 14 Avril 2023</span
-          ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
-          ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">20h15</span>
-        </p>
+      <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+        <img src="../components/img/Concert_2.png" class="flex-grow self-stretch rounded-tl-lg rounded-tr-lg object-none" />
+        <div class="relative flex flex-grow flex-col items-center justify-center gap-2.5 self-stretch bg-[#c4c4c4] px-[18px] py-2.5">
+          <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-black">
+            Maxime LE FORESTIER - Interprêté par Slyvain GUILLAUME
+          </p>
+          <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-[#322e88]">Le château d’Aubenas</p>
+        </div>
         <div
-          class="relative flex flex-shrink-0 flex-grow-0 flex-col items-center justify-center gap-2.5 rounded-lg bg-[#ffe607]/40 px-10 py-1"
+          class="
+            relative
+            flex flex-grow flex-col
+            items-center
+            justify-center
+            gap-8
+            self-stretch
+            rounded-bl-lg rounded-br-lg
+            bg-white
+            px-3
+            py-3
+          "
         >
-          <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+          <p class="flex-grow self-stretch text-center text-2xl">
+            <span class="flex-grow self-stretch text-center text-2xl text-[#54bb30]"> 14 Avril 2023</span
+            ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
+            ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">20h15</span>
+          </p>
+          <div
+            class="
+              relative
+              flex flex-shrink-0 flex-grow-0 flex-col
+              items-center
+              justify-center
+              gap-2.5
+              rounded-lg
+              bg-[#ffe607]/40
+              px-10
+              py-1
+            "
+          >
+            <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
-      <img src="../components/img/Concert_3.png" class="flex-grow self-stretch rounded-tl-lg rounded-tr-lg object-none" />
-      <div class="relative flex flex-grow flex-col items-center justify-center gap-2.5 self-stretch bg-[#c4c4c4] px-[18px] py-2.5">
-        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-black">
-          Charles AZNAVOUR - Interprêté par Roger GUICHARD
-        </p>
-        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-[#322e88]">Salle “Le Bournot”</p>
-      </div>
-      <div
-        class="
-          relative
-          flex flex-grow flex-col
-          items-center
-          justify-center
-          gap-8
-          self-stretch
-          rounded-bl-lg rounded-br-lg
-          bg-white
-          px-3
-          py-3
-        "
-      >
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-2xl text-[#54bb30]"> 14 Avril 2023</span
-          ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
-          ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">21h30</span>
-        </p>
+      <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+        <img src="../components/img/Concert_3.png" class="flex-grow self-stretch rounded-tl-lg rounded-tr-lg object-none" />
+        <div class="relative flex flex-grow flex-col items-center justify-center gap-2.5 self-stretch bg-[#c4c4c4] px-[18px] py-2.5">
+          <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-black">
+            Charles AZNAVOUR - Interprêté par Roger GUICHARD
+          </p>
+          <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-[#322e88]">Salle “Le Bournot”</p>
+        </div>
         <div
-          class="relative flex flex-shrink-0 flex-grow-0 flex-col items-center justify-center gap-2.5 rounded-lg bg-[#ffe607]/40 px-10 py-1"
+          class="
+            relative
+            flex flex-grow flex-col
+            items-center
+            justify-center
+            gap-8
+            self-stretch
+            rounded-bl-lg rounded-br-lg
+            bg-white
+            px-3
+            py-3
+          "
         >
-          <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+          <p class="flex-grow self-stretch text-center text-2xl">
+            <span class="flex-grow self-stretch text-center text-2xl text-[#54bb30]"> 14 Avril 2023</span
+            ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
+            ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">21h30</span>
+          </p>
+          <div
+            class="
+              relative
+              flex flex-shrink-0 flex-grow-0 flex-col
+              items-center
+              justify-center
+              gap-2.5
+              rounded-lg
+              bg-[#ffe607]/40
+              px-10
+              py-1
+            "
+          >
+            <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
-      <img src="../components/img/Concert_4.png" class="flex-grow self-stretch rounded-tl-lg rounded-tr-lg object-none" />
-      <div class="relative flex flex-grow flex-col items-center justify-center gap-2.5 self-stretch bg-[#c4c4c4] px-[18px] py-2.5">
-        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-black">
-          Jean-Jacques GOLDMAN - Interprêté par Flavien LEMONT
-        </p>
-        <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-[#322e88]">Le château d’Aubenas</p>
-      </div>
-      <div
-        class="
-          relative
-          flex flex-grow flex-col
-          items-center
-          justify-center
-          gap-8
-          self-stretch
-          rounded-bl-lg rounded-br-lg
-          bg-white
-          px-3
-          py-3
-        "
-      >
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-2xl text-[#54bb30]"> 14 Avril 2023</span
-          ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
-          ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">23h15</span>
-        </p>
+      <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+        <img src="../components/img/Concert_4.png" class="flex-grow self-stretch rounded-tl-lg rounded-tr-lg object-none" />
+        <div class="relative flex flex-grow flex-col items-center justify-center gap-2.5 self-stretch bg-[#c4c4c4] px-[18px] py-2.5">
+          <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-black">
+            Jean-Jacques GOLDMAN - Interprêté par Flavien LEMONT
+          </p>
+          <p class="flex-shrink-0 flex-grow-0 self-stretch text-center text-base text-[#322e88]">Le château d’Aubenas</p>
+        </div>
         <div
-          class="relative flex flex-shrink-0 flex-grow-0 flex-col items-center justify-center gap-2.5 rounded-lg bg-[#ffe607]/40 px-10 py-1"
+          class="
+            relative
+            flex flex-grow flex-col
+            items-center
+            justify-center
+            gap-8
+            self-stretch
+            rounded-bl-lg rounded-br-lg
+            bg-white
+            px-3
+            py-3
+          "
         >
-          <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+          <p class="flex-grow self-stretch text-center text-2xl">
+            <span class="flex-grow self-stretch text-center text-2xl text-[#54bb30]"> 14 Avril 2023</span
+            ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
+            ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">23h15</span>
+          </p>
+          <div
+            class="
+              relative
+              flex flex-shrink-0 flex-grow-0 flex-col
+              items-center
+              justify-center
+              gap-2.5
+              rounded-lg
+              bg-[#ffe607]/40
+              px-10
+              py-1
+            "
+          >
+            <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+          </div>
         </div>
       </div>
     </div>
@@ -203,166 +245,171 @@ export default {
 
     <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos artistes préférés</p>
 
-    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
-      <img src="../components/img/Slyvain_GUILLAUME.png" class="flex-grow self-stretch rounded-tl-[25px] rounded-tr-[25px] object-cover" />
-      <div
-        class="
-          relative
-          flex flex-grow flex-col
-          items-center
-          justify-center
-          gap-5
-          self-stretch
-          rounded-bl-xl rounded-br-xl
-          bg-[#322e88]/60
-          px-1.5
-          py-2
-        "
-      >
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-2xl text-white">Slyvain GUILLAUME</span>
-          <br />
-          <span class="flex-grow self-stretch text-center text-base text-white">dans le rôle de</span>
-          <br />
-          <span class="flex-grow self-stretch text-center text-2xl text-white">Maxime LE FORESTIER</span>
-        </p>
+    <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(350px,1fr))]">
+      <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+        <img
+          src="../components/img/Slyvain_GUILLAUME.png"
+          class="flex-grow self-stretch rounded-tl-[25px] rounded-tr-[25px] object-cover"
+        />
         <div
           class="
             relative
-            flex flex-shrink-0 flex-grow-0 flex-col
+            flex flex-grow flex-col
             items-center
             justify-center
-            gap-2.5
-            rounded-lg
-            bg-[#54bb30]/80
-            px-5
-            py-1.5
+            gap-5
+            self-stretch
+            rounded-bl-xl rounded-br-xl
+            bg-[#322e88]/60
+            px-1.5
+            py-2
           "
         >
-          <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
+          <p class="flex-grow self-stretch text-center text-2xl">
+            <span class="flex-grow self-stretch text-center text-2xl text-white">Slyvain GUILLAUME</span>
+            <br />
+            <span class="flex-grow self-stretch text-center text-base text-white">dans le rôle de</span>
+            <br />
+            <span class="flex-grow self-stretch text-center text-2xl text-white">Maxime LE FORESTIER</span>
+          </p>
+          <div
+            class="
+              relative
+              flex flex-shrink-0 flex-grow-0 flex-col
+              items-center
+              justify-center
+              gap-2.5
+              rounded-lg
+              bg-[#54bb30]/80
+              px-5
+              py-1.5
+            "
+          >
+            <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
-      <img src="../components/img/Roger_GUICHARD.png" class="flex-grow self-stretch rounded-tl-[25px] rounded-tr-[25px] object-cover" />
-      <div
-        class="
-          relative
-          flex flex-grow flex-col
-          items-center
-          justify-center
-          gap-5
-          self-stretch
-          rounded-bl-xl rounded-br-xl
-          bg-[#322e88]/60
-          px-1.5
-          py-2
-        "
-      >
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-2xl text-white">Roger GUICHARD</span>
-          <br />
-          <span class="flex-grow self-stretch text-center text-base text-white">dans le rôle de</span>
-          <br />
-          <span class="flex-grow self-stretch text-center text-2xl text-white">Charles AZNAVOUR</span>
-        </p>
+      <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+        <img src="../components/img/Roger_GUICHARD.png" class="flex-grow self-stretch rounded-tl-[25px] rounded-tr-[25px] object-cover" />
         <div
           class="
             relative
-            flex flex-shrink-0 flex-grow-0 flex-col
+            flex flex-grow flex-col
             items-center
             justify-center
-            gap-2.5
-            rounded-lg
-            bg-[#54bb30]/80
-            px-5
-            py-1.5
+            gap-5
+            self-stretch
+            rounded-bl-xl rounded-br-xl
+            bg-[#322e88]/60
+            px-1.5
+            py-2
           "
         >
-          <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
+          <p class="flex-grow self-stretch text-center text-2xl">
+            <span class="flex-grow self-stretch text-center text-2xl text-white">Roger GUICHARD</span>
+            <br />
+            <span class="flex-grow self-stretch text-center text-base text-white">dans le rôle de</span>
+            <br />
+            <span class="flex-grow self-stretch text-center text-2xl text-white">Charles AZNAVOUR</span>
+          </p>
+          <div
+            class="
+              relative
+              flex flex-shrink-0 flex-grow-0 flex-col
+              items-center
+              justify-center
+              gap-2.5
+              rounded-lg
+              bg-[#54bb30]/80
+              px-5
+              py-1.5
+            "
+          >
+            <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
-      <img src="../components/img/Flavien_LEMONT.png" class="flex-grow self-stretch rounded-tl-[25px] rounded-tr-[25px] object-cover" />
-      <div
-        class="
-          relative
-          flex flex-grow flex-col
-          items-center
-          justify-center
-          gap-5
-          self-stretch
-          rounded-bl-xl rounded-br-xl
-          bg-[#322e88]/60
-          px-1.5
-          py-2
-        "
-      >
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-2xl text-white">Flavien LEMONT</span>
-          <br />
-          <span class="flex-grow self-stretch text-center text-base text-white">dans le rôle de</span>
-          <br />
-          <span class="flex-grow self-stretch text-center text-2xl text-white">Jean-Jacques GOLDMAN</span>
-        </p>
+      <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+        <img src="../components/img/Flavien_LEMONT.png" class="flex-grow self-stretch rounded-tl-[25px] rounded-tr-[25px] object-cover" />
         <div
           class="
             relative
-            flex flex-shrink-0 flex-grow-0 flex-col
+            flex flex-grow flex-col
             items-center
             justify-center
-            gap-2.5
-            rounded-lg
-            bg-[#54bb30]/80
-            px-5
-            py-1.5
+            gap-5
+            self-stretch
+            rounded-bl-xl rounded-br-xl
+            bg-[#322e88]/60
+            px-1.5
+            py-2
           "
         >
-          <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
+          <p class="flex-grow self-stretch text-center text-2xl">
+            <span class="flex-grow self-stretch text-center text-2xl text-white">Flavien LEMONT</span>
+            <br />
+            <span class="flex-grow self-stretch text-center text-base text-white">dans le rôle de</span>
+            <br />
+            <span class="flex-grow self-stretch text-center text-2xl text-white">Jean-Jacques GOLDMAN</span>
+          </p>
+          <div
+            class="
+              relative
+              flex flex-shrink-0 flex-grow-0 flex-col
+              items-center
+              justify-center
+              gap-2.5
+              rounded-lg
+              bg-[#54bb30]/80
+              px-5
+              py-1.5
+            "
+          >
+            <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
-      <img src="../components/img/Herve_ROGNARD.png" class="flex-grow self-stretch rounded-tl-[25px] rounded-tr-[25px] object-cover" />
-      <div
-        class="
-          relative
-          flex flex-grow flex-col
-          items-center
-          justify-center
-          gap-5
-          self-stretch
-          rounded-bl-xl rounded-br-xl
-          bg-[#322e88]/60
-          px-1.5
-          py-2
-        "
-      >
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-2xl text-white">Hervé ROGNARD</span>
-          <br />
-          <span class="flex-grow self-stretch text-center text-base text-white">dans le rôle de</span>
-          <br />
-          <span class="flex-grow self-stretch text-center text-2xl text-white">Jean FERRAT</span>
-        </p>
+      <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
+        <img src="../components/img/Herve_ROGNARD.png" class="flex-grow self-stretch rounded-tl-[25px] rounded-tr-[25px] object-cover" />
         <div
           class="
             relative
-            flex flex-shrink-0 flex-grow-0 flex-col
+            flex flex-grow flex-col
             items-center
             justify-center
-            gap-2.5
-            rounded-lg
-            bg-[#54bb30]/80
-            px-5
-            py-1.5
+            gap-5
+            self-stretch
+            rounded-bl-xl rounded-br-xl
+            bg-[#322e88]/60
+            px-1.5
+            py-2
           "
         >
-          <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
+          <p class="flex-grow self-stretch text-center text-2xl">
+            <span class="flex-grow self-stretch text-center text-2xl text-white">Hervé ROGNARD</span>
+            <br />
+            <span class="flex-grow self-stretch text-center text-base text-white">dans le rôle de</span>
+            <br />
+            <span class="flex-grow self-stretch text-center text-2xl text-white">Jean FERRAT</span>
+          </p>
+          <div
+            class="
+              relative
+              flex flex-shrink-0 flex-grow-0 flex-col
+              items-center
+              justify-center
+              gap-2.5
+              rounded-lg
+              bg-[#54bb30]/80
+              px-5
+              py-1.5
+            "
+          >
+            <p class="flex-shrink-0 flex-grow-0 text-left text-base text-white">Fiche artiste</p>
+          </div>
         </div>
       </div>
     </div>
