@@ -39,5 +39,28 @@ export default {
         xl:h-20
       "
     />
+
+    <p class="px-5 pt-6 text-left text-white sm:text-xl lg:text-3xl xl:text-5xl">Prénom :</p>
+    <input
+      type="text"
+      class="
+        lg:h-15
+        relative
+        m-auto
+        mt-5
+        flex
+        w-3/5
+        items-center
+        justify-center
+        gap-20
+        rounded-lg
+        border-4 border-black
+        bg-white
+        px-4
+        py-2.5
+        sm:h-10
+        xl:h-20
+      "
+    />
   </div>
 </template>
