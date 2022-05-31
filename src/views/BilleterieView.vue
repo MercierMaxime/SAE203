@@ -42,7 +42,7 @@ export default {
 
     <p class="px-5 pt-6 text-left text-white sm:text-xl lg:text-3xl xl:text-5xl">Nombre de places :</p>
 
-    <div class="relative m-auto mt-5 flex w-2/5 items-center justify-center gap-5 rounded-lg border-4 border-black bg-white px-2 py-[5px]">
+    <div class="relative m-auto mt-5 flex w-2/5 items-center justify-center gap-5 rounded-lg border-4 border-black bg-white px-2 py-1">
       <svg
         width="30"
         height="40"
@@ -72,6 +72,14 @@ export default {
           stroke-linejoin="round"
         ></path>
       </svg>
+    </div>
+
+    <p class="px-5 pt-6 text-left text-white sm:text-xl lg:text-3xl xl:text-5xl">Type de paiement :</p>
+
+    <div class="m-auto mt-5 grid w-3/5 grid-cols-3 space-x-4">
+      <img src="../components/img/CB.png" alt="Carte bleue" />
+      <img src="../components/img/Visa.png" alt="Carte VISA" />
+      <img src="../components/img/MasterCard.png" alt="Carte MasterCard" />
     </div>
   </div>
 </template>
