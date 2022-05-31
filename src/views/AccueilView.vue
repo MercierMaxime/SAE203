@@ -37,7 +37,7 @@ export default {
       </RouterLink>
     </div>
 
-    <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos concerts favorits</p>
+    <p class="custom-font pb-10 pt-20 text-center sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos concerts favorits</p>
 
     <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(350px,1fr))]">
       <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
@@ -227,7 +227,7 @@ export default {
       </div>
     </div>
 
-    <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Réserver vos places</p>
+    <p class="custom-font pb-10 pt-20 text-center sm:text-3xl lg:text-4xl xl:text-6xl">Réserver vos places</p>
 
     <p class="pb-3 text-center text-black sm:text-base lg:text-xl xl:text-2xl">
       <span class="text-center text-black sm:text-base lg:text-xl xl:text-2xl">Nous avons l’honneur de vous proposez un total de </span
@@ -251,7 +251,7 @@ export default {
       </div></RouterLink
     >
 
-    <p class="pb-10 pt-20 text-center font-beckman sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos artistes préférés</p>
+    <p class="custom-font pb-10 pt-20 text-center sm:text-3xl lg:text-4xl xl:text-6xl">Retrouver vos artistes préférés</p>
 
     <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(350px,1fr))]">
       <div class="relative m-auto flex w-4/5 flex-col items-center justify-center pb-10">
@@ -432,4 +432,14 @@ export default {
   </div>
   <Footerpart />
 </template>
+
+<style>
+@font-face {
+  font-family: Beckman;
+  src: url(./fonts/Beckman-Free.woff2) format("woff2");
+}
+.custom-font {
+  font-family: Beckman;
+}
+</style>
 

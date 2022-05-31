@@ -11,7 +11,7 @@ export default {
 <template>
   <Headerpart />
   <div class="bg-gradient-to-bl from-indigo-500 to-sky-400 pt-6">
-    <p class="pb-10 pt-20 text-center font-beckman text-white sm:text-3xl lg:text-4xl xl:text-6xl">Erreur - 404</p>
+    <p class="custom-font pb-10 pt-20 text-center text-white sm:text-3xl lg:text-4xl xl:text-6xl">Erreur - 404</p>
 
     <p class="pb-10 pt-10 text-center font-helvetica text-white sm:text-xl lg:text-2xl xl:text-4xl">
       Il semblerait que la page que vous cherchiez ne sois pas ici...
@@ -39,3 +39,13 @@ export default {
   </div>
   <Footerpart />
 </template>
+
+<style>
+@font-face {
+  font-family: Beckman;
+  src: url(./fonts/Beckman-Free.woff2) format("woff2");
+}
+.custom-font {
+  font-family: Beckman;
+}
+</style>
