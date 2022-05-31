@@ -65,21 +65,23 @@ export default {
             ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
             ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">18H45</span>
           </p>
-          <div
-            class="
-              relative
-              flex flex-shrink-0 flex-grow-0 flex-col
-              items-center
-              justify-center
-              gap-2.5
-              rounded-lg
-              bg-[#ffe607]/40
-              px-10
-              py-1
-            "
-          >
-            <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
-          </div>
+          <RouterLink to="/Evenement">
+            <div
+              class="
+                relative
+                flex flex-shrink-0 flex-grow-0 flex-col
+                items-center
+                justify-center
+                gap-2.5
+                rounded-lg
+                bg-[#ffe607]/40
+                px-10
+                py-1
+              "
+            >
+              <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+            </div>
+          </RouterLink>
         </div>
       </div>
 
@@ -110,21 +112,23 @@ export default {
             ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
             ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">20h15</span>
           </p>
-          <div
-            class="
-              relative
-              flex flex-shrink-0 flex-grow-0 flex-col
-              items-center
-              justify-center
-              gap-2.5
-              rounded-lg
-              bg-[#ffe607]/40
-              px-10
-              py-1
-            "
-          >
-            <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
-          </div>
+          <RouterLink to="/Evenement3">
+            <div
+              class="
+                relative
+                flex flex-shrink-0 flex-grow-0 flex-col
+                items-center
+                justify-center
+                gap-2.5
+                rounded-lg
+                bg-[#ffe607]/40
+                px-10
+                py-1
+              "
+            >
+              <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+            </div>
+          </RouterLink>
         </div>
       </div>
 
@@ -155,21 +159,23 @@ export default {
             ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
             ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">21h30</span>
           </p>
-          <div
-            class="
-              relative
-              flex flex-shrink-0 flex-grow-0 flex-col
-              items-center
-              justify-center
-              gap-2.5
-              rounded-lg
-              bg-[#ffe607]/40
-              px-10
-              py-1
-            "
-          >
-            <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
-          </div>
+          <RouterLink to="/Evenement2">
+            <div
+              class="
+                relative
+                flex flex-shrink-0 flex-grow-0 flex-col
+                items-center
+                justify-center
+                gap-2.5
+                rounded-lg
+                bg-[#ffe607]/40
+                px-10
+                py-1
+              "
+            >
+              <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+            </div>
+          </RouterLink>
         </div>
       </div>
 
@@ -200,21 +206,23 @@ export default {
             ><span class="flex-grow self-stretch text-center text-2xl text-black"> - </span
             ><span class="flex-grow self-stretch text-center text-2xl text-[#29c0f1]">23h15</span>
           </p>
-          <div
-            class="
-              relative
-              flex flex-shrink-0 flex-grow-0 flex-col
-              items-center
-              justify-center
-              gap-2.5
-              rounded-lg
-              bg-[#ffe607]/40
-              px-10
-              py-1
-            "
-          >
-            <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
-          </div>
+          <RouterLink to="/Evenement4">
+            <div
+              class="
+                relative
+                flex flex-shrink-0 flex-grow-0 flex-col
+                items-center
+                justify-center
+                gap-2.5
+                rounded-lg
+                bg-[#ffe607]/40
+                px-10
+                py-1
+              "
+            >
+              <p class="flex-shrink-0 flex-grow-0 text-center text-base text-black">En savoir plus</p>
+            </div>
+          </RouterLink>
         </div>
       </div>
     </div>
