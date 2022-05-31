@@ -120,20 +120,22 @@ export default {
         </div>
       </RouterLink>
 
-      <div class="relative mr-10 mt-20 flex items-center justify-center rounded-lg bg-white">
-        <p class="py-8 text-center text-black sm:text-lg lg:text-xl xl:text-2xl">Maxime LE FORESTIER par Slyvain GUILLAUME</p>
-        <div class="relative flex flex-col items-center justify-center gap-1">
-          <svg viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-1/5" preserveAspectRatio="none">
-            <path
-              d="M76 46L98.5 68.5M98.5 68.5L76 91M98.5 68.5L38.5 68.5M136 68.5C136 105.779 105.779 136 68.5 136C31.2208 136 1 105.779 1 68.5C1 31.2208 31.2208 1 68.5 1C105.779 1 136 31.2208 136 68.5Z"
-              stroke="#111827"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </svg>
+      <RouterLink to="/Evenement3">
+        <div class="relative mr-10 mt-20 flex items-center justify-center rounded-lg bg-white">
+          <p class="py-8 text-center text-black sm:text-lg lg:text-xl xl:text-2xl">Maxime LE FORESTIER par Slyvain GUILLAUME</p>
+          <div class="relative flex flex-col items-center justify-center gap-1">
+            <svg viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-1/5" preserveAspectRatio="none">
+              <path
+                d="M76 46L98.5 68.5M98.5 68.5L76 91M98.5 68.5L38.5 68.5M136 68.5C136 105.779 105.779 136 68.5 136C31.2208 136 1 105.779 1 68.5C1 31.2208 31.2208 1 68.5 1C105.779 1 136 31.2208 136 68.5Z"
+                stroke="#111827"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
         </div>
-      </div>
+      </RouterLink>
     </div>
     <br />
   </div>
