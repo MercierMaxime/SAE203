@@ -117,5 +117,12 @@ export default {
         </div>
       </div>
     </div>
+
+    <div class="flex flex-col items-center justify-center gap-2 pt-12 pb-20">
+      <div class="relative flex flex-col items-center justify-center gap-1 rounded-lg bg-[#322e88] px-5 py-3">
+        <RouterLink to="/"><p class="px-20 py-1 text-center text-white sm:text-lg lg:text-2xl xl:text-4xl">Paiement</p></RouterLink>
+      </div>
+    </div>
   </div>
+  <Footerpart />
 </template>
