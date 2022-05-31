@@ -121,7 +121,7 @@ export default {
       </RouterLink>
 
       <div class="relative mr-10 mt-20 flex items-center justify-center rounded-lg bg-white">
-        <p class="py-8 text-center text-black sm:text-lg lg:text-xl xl:text-2xl">Charles AZNAVOUR par Roger GUICHARD</p>
+        <p class="py-8 text-center text-black sm:text-lg lg:text-xl xl:text-2xl">Maxime LE FORESTIER par Slyvain GUILLAUME</p>
         <div class="relative flex flex-col items-center justify-center gap-1">
           <svg viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-1/5" preserveAspectRatio="none">
             <path

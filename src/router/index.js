@@ -6,6 +6,7 @@ import BilleterieView from '../views/BilleterieView.vue'
 import ContactView from '../views/ContactView.vue'
 import EvenementView from '../views/EvenementView.vue'
 import Evenement2View from '../views/Evenement2View.vue'
+import Evenement3View from '../views/Evenement3View.vue'
 import Page404View from '../views/404View.vue'
 
 const router = createRouter({
@@ -18,6 +19,7 @@ const router = createRouter({
     { path: '/Contact', name: 'Contact', component: ContactView },
     { path: '/Evenement', name: 'Evenement', component: EvenementView },
     { path: '/Evenement2', name: 'Evenement2', component: Evenement2View },
+    { path: '/Evenement3', name: 'Evenement3', component: Evenement3View },
     { path: '/:pathMatch(.*)*', name: 'Page404View', component: Page404View },
 
   ]
