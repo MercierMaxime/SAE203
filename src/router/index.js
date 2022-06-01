@@ -8,6 +8,12 @@ import EvenementView from '../views/EvenementView.vue'
 import Evenement2View from '../views/Evenement2View.vue'
 import Evenement3View from '../views/Evenement3View.vue'
 import Evenement4View from '../views/Evenement4View.vue'
+
+import ListeArtiste from '../views/artiste/ListeView.vue'
+import CreateArtiste from '../views/artiste/CreateView.vue'
+import UpdateArtiste from '../views/artiste/UpdateView.vue'
+import DeleteArtiste from '../views/artiste/DeleteView.vue'
+
 import Page404View from '../views/404View.vue'
 
 const router = createRouter({
@@ -22,6 +28,12 @@ const router = createRouter({
     { path: '/Evenement2', name: 'Evenement2', component: Evenement2View },
     { path: '/Evenement3', name: 'Evenement3', component: Evenement3View },
     { path: '/Evenement4', name: 'Evenement4', component: Evenement4View },
+
+    { path: '/Artiste', name: 'ListeArtiste', component: ListeArtiste },
+    { path: '/createArtiste', name: 'CreateArtiste', component: CreateArtiste },
+    { path: '/updateArtiste/:id', name: 'UpdateArtiste', component: UpdateArtiste },
+    { path: '/deleteArtiste/:id', name: 'DeleteArtiste', component: DeleteArtiste },
+
     { path: '/:pathMatch(.*)*', name: 'Page404View', component: Page404View },
 
   ]
