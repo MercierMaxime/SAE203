@@ -133,7 +133,7 @@ export default {
         </p>
 
         <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-base text-white">Intéprêteur de Jean-Jacques GOLDMAN </span>
+          <span class="flex-grow self-stretch text-center text-base text-white">Interpréteur de Jean-Jacques GOLDMAN </span>
         </p>
 
         <p class="flex-grow self-stretch text-center text-2xl">

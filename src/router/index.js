@@ -29,7 +29,7 @@ const router = createRouter({
     { path: '/Evenement3', name: 'Evenement3', component: Evenement3View },
     { path: '/Evenement4', name: 'Evenement4', component: Evenement4View },
 
-    { path: '/Artiste', name: 'ListeArtiste', component: ListeArtiste },
+    { path: '/artiste', name: 'ListeArtiste', component: ListeArtiste },
     { path: '/createArtiste', name: 'CreateArtiste', component: CreateArtiste },
     { path: '/updateArtiste/:id', name: 'UpdateArtiste', component: UpdateArtiste },
     { path: '/deleteArtiste/:id', name: 'DeleteArtiste', component: DeleteArtiste },
