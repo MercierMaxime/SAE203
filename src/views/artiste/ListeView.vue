@@ -44,7 +44,7 @@ export default {
 
       const q = query(dbPart, orderBy("nom", "asc"));
       await onSnapshot(q, (snapshot) => {
-        this.listeArtiste = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+        this.ListeArtiste = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
 
         this.ListeArtiste.forEach(function (personne) {
           // Obtenir le Cloud Storage
@@ -71,57 +71,55 @@ export default {
 <template>
   <Headerpart />
 
-  <div class="card bg-light">
-    <div class="card-header">
-      <h5>
-        Liste des Artistes
+  <div class="bg-gradient-to-bl from-indigo-500 to-sky-400 pt-6">
+    <div class="card bg-light">
+      <div class="card-header">
+        <p class="text-center font-bold text-white sm:text-2xl lg:text-3xl xl:text-5xl">Liste des Artistes</p>
         <span class="float-right" title="Créer un nouveau artiste">
           <RouterLink to="/createArtiste">
             <i class="fa fa-plus fa-lg text-light"></i>
           </RouterLink>
         </span>
-      </h5>
-    </div>
+      </div>
 
-    <div class="card-body table-responsive">
-      <table class="text-light table">
-        <thead>
-          <tr>
-            <th scope="col" class="text-center">Image</th>
-            <th scope="col">Nom</th>
-            <th scope="col">Prénom</th>
-            <th scope="col">Âge</th>
-            <th scope="col">Pratiquant depuis</th>
-            <th scope="col">Interpréteur de</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="part in ListeArtiste" :key="part.id">
-            <td class="text-center">
-              <img class="media-object imageSmall" :src="part.photo" :alt="part.prenom + ' ' + part.nom" />
-            </td>
-            <td>
-              <b>{{ part.nom }}</b>
-            </td>
-            <td>{{ part.prenom }}</td>
-            <td>{{ part.age }}</td>
-            <td>{{ part.pratique }}</td>
-            <td>{{ part.interpreteur }}</td>
-            <td>
-              <span title="Supprimer l'artiste" class="mr-2">
-                <RouterLink :to="{ name: 'DeleteArtiste', params: { id: part.id } }">
-                  <i class="fa fa-times fa-lg text-light"></i>
-                </RouterLink>
-              </span>
-              <span title="Modifier l'artiste" class="mr-2">
-                <RouterLink :to="{ name: 'UpdateArtiste', params: { id: part.id } }">
-                  <i class="fa fa-edit fa-lg text-light"></i>
-                </RouterLink>
-              </span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="card-body table-responsive">
+        <table class="text-light table text-white">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">Image</th>
+              <th scope="col">Nom</th>
+              <th scope="col">Prénom</th>
+              <th scope="col">Âge</th>
+              <th scope="col">Interpréteur de</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="part in ListeArtiste" :key="part.id">
+              <td class="text-center">
+                <img class="media-object imageSmall" :src="part.photo" :alt="part.prenom + ' ' + part.nom" />
+              </td>
+              <td>
+                <b>{{ part.nom }}</b>
+              </td>
+              <td>{{ part.prenom }}</td>
+              <td>{{ part.age }}</td>
+              <td>{{ part.interpreteur }}</td>
+              <td>
+                <span title="Supprimer l'artiste" class="mr-2">
+                  <RouterLink :to="{ name: 'DeleteArtiste', params: { id: part.id } }">
+                    <i class="fa fa-times fa-lg text-light"></i>
+                  </RouterLink>
+                </span>
+                <span title="Modifier l'artiste" class="mr-2">
+                  <RouterLink :to="{ name: 'UpdateArtiste', params: { id: part.id } }">
+                    <i class="fa fa-edit fa-lg text-light"></i>
+                  </RouterLink>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
   <Footerpart />
