@@ -115,9 +115,7 @@ export default {
     <div class="container">
       <form enctype="multipart/form-data" @submit.prevent="CreateArtiste">
         <div class="card bg-dark">
-          <div class="card-header">
-            <h5 style="color: white">Création artiste</h5>
-          </div>
+          <p class="px-5 pt-6 text-center text-white sm:text-xl lg:text-3xl xl:text-5xl">Créer un artiste</p>
 
           <div class="card-body">
             <div class="row">
@@ -130,21 +128,21 @@ export default {
               <div class="col-6">
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Nom</span>
+                    <span class="input-group-text text-white">Nom</span>
                   </div>
                   <input class="form-control" placeholder="Nom de la personne" v-model="artiste.nom" key="required" />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Prénom</span>
+                    <span class="input-group-text text-white">Prénom</span>
                   </div>
                   <input v-model="artiste.prenom" class="form-control" placeholder="Prénom de la personne" key="required" />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Photo</span>
+                    <span class="input-group-text text-white">Photo</span>
                   </div>
                   <div class="custom-file">
                     <input type="file" class="custom-file-input" ref="file" id="file" @change="previewImage" />
@@ -154,27 +152,33 @@ export default {
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Âge</span>
+                    <span class="input-group-text text-white">Âge</span>
                   </div>
                   <input class="form-control" v-model="artiste.age" placeholder="Âge de la personne" key="required" />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Interpréteur</span>
+                    <span class="input-group-text text-white">Interpréteur</span>
                   </div>
                   <input class="form-control" v-model="artiste.interpreteur" placeholder="Quel chanteur interprète t-il ?" key="required" />
                 </div>
-                <br />
+
+                <div class="flex-cols-2 flex justify-center gap-5">
+                  <div class="flex flex-col py-10">
+                    <button type="submit" class="relative flex flex-col gap-1 rounded-lg bg-[#322e88] px-5 py-3 text-white">Créer</button>
+                  </div>
+
+                  <div class="flex flex-col py-10">
+                    <RouterLink to="/artiste">
+                      <button type="submit" class="relative flex flex-col gap-1 rounded-lg bg-[#322e88] px-5 py-3 text-white">
+                        Retour
+                      </button>
+                    </RouterLink>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="card-footer">
-            <button type="submit" class="btn btn-dark float-left">Créer</button>
-            <button class="btn btn-dark float-right">
-              <router-link to="/artiste">Cancel</router-link>
-            </button>
           </div>
         </div>
       </form>
