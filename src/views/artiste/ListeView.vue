@@ -83,7 +83,6 @@ export default {
       </div>
 
       <div class="card-body table-responsive">
-        <button><router-link to="/createArtiste">Créer un artiste</router-link></button>
         <table class="text-light table text-white">
           <thead>
             <tr>
@@ -119,6 +118,24 @@ export default {
               </td>
             </tr>
           </tbody>
+
+          <div class="flex-cols-3 flex justify-center gap-5">
+            <div class="flex flex-col py-10">
+              <RouterLink to="/createArtiste">
+                <button type="submit" class="px relative flex flex-col gap-1 rounded-lg bg-[#322e88] px-5 py-3 text-white">
+                  Créer un artiste
+                </button>
+              </RouterLink>
+            </div>
+
+            <div class="flex flex-col py-10">
+              <RouterLink to="/updateArtiste/:id">
+                <button type="submit" class="px relative flex flex-col gap-1 rounded-lg bg-[#322e88] px-5 py-3 text-white">
+                  Modifier un artiste
+                </button>
+              </RouterLink>
+            </div>
+          </div>
         </table>
       </div>
     </div>
