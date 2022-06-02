@@ -26,16 +26,17 @@ import {
 
 export default {
   name: "CreateView",
+  components: { Headerpart, Footerpart },
   data() {
     return {
       imageData: null, // Image prévisualisée
-      ListeArtiste: [], // Liste des pays pour la nationalité du participan
+      ListeArtiste: [],
       artiste: {
         nom: null, // son nom
         prenom: null, // son prénom
         photo: null, // sa photo (nom du fichier)
-        age: null, // sa date de naissance
-        interpreteur: null, // sa nationalité
+        age: null, // sa âge
+        interpreteur: null, // quel interpreteur joue t-il
       },
     };
   },
