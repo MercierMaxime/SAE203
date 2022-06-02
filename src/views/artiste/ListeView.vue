@@ -122,16 +122,22 @@ export default {
           <div class="flex-cols-3 flex justify-center gap-5">
             <div class="flex flex-col py-10">
               <RouterLink to="/createArtiste">
-                <button type="submit" class="px relative flex flex-col gap-1 rounded-lg bg-[#322e88] px-5 py-3 text-white">
-                  Créer un artiste
-                </button>
+                <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">Créer un artiste</button>
               </RouterLink>
             </div>
 
             <div class="flex flex-col py-10">
               <RouterLink to="/updateArtiste/:id">
-                <button type="submit" class="px relative flex flex-col gap-1 rounded-lg bg-[#322e88] px-5 py-3 text-white">
+                <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">
                   Modifier un artiste
+                </button>
+              </RouterLink>
+            </div>
+
+            <div class="flex flex-col py-10">
+              <RouterLink to="/deleteArtiste/:id">
+                <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">
+                  Supprimer un artiste
                 </button>
               </RouterLink>
             </div>

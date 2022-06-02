@@ -113,9 +113,7 @@ export default {
     <div class="container">
       <form enctype="multipart/form-data" @submit.prevent="DeleteArtiste">
         <div class="card bg-dark">
-          <div class="card-header">
-            <h5 style="color: white">Suppression d'un artiste</h5>
-          </div>
+          <p class="px-5 pt-6 text-center text-white sm:text-xl lg:text-3xl xl:text-5xl">Supprimer un artiste</p>
 
           <div class="card-body">
             <div class="row">
@@ -128,28 +126,28 @@ export default {
               <div class="col-6">
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Nom</span>
+                    <span class="input-group-text text-white">Nom</span>
                   </div>
-                  <input class="form-control" placeholder="Nom de la personne" v-model="artiste.nom" disabled />
+                  <input class="form-control" required placeholder="Nom de la personne" v-model="artiste.nom" />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Prénom</span>
+                    <span class="input-group-text text-white">Prénom</span>
                   </div>
-                  <input class="form-control" placeholder="Prénom de la personne" v-model="artiste.prenom" disabled />
+                  <input class="form-control" required placeholder="Prénom de la personne" v-model="artiste.prenom" />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Âge</span>
+                    <span class="input-group-text text-white">Âge</span>
                   </div>
                   <input class="form-control" required v-model="artiste.age" placeholder="Âge de la personne" />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Interpréteur</span>
+                    <span class="input-group-text text-white">Interpréteur</span>
                   </div>
                   <input class="form-control" required v-model="artiste.interpreteur" placeholder="Quel chanteur interprète t-il ?" />
                 </div>
@@ -157,16 +155,21 @@ export default {
               </div>
             </div>
             <br />
-            <h5 class="alert alert-warning text-center" role="alert">
+            <h5 class="alert alert-warning text-center text-white" role="alert">
               Attention vous allez supprimer cet artiste, cette action est irréversible !!
             </h5>
           </div>
 
-          <div class="card-footer">
-            <button type="submit" class="btn btn-dark float-left">Supprimer</button>
-            <button class="btn btn-dark float-right">
-              <RouterLink to="/artiste">Cancel</RouterLink>
-            </button>
+          <div class="flex-cols-2 flex justify-center gap-5">
+            <div class="flex flex-col py-10">
+              <button type="submit" class="relative flex flex-col gap-1 rounded-lg bg-[#322e88] px-5 py-3 text-white">Supprimer</button>
+            </div>
+
+            <div class="flex flex-col py-10">
+              <RouterLink to="/artiste">
+                <button type="submit" class="relative flex flex-col gap-1 rounded-lg bg-[#322e88] px-5 py-3 text-white">Retour</button>
+              </RouterLink>
+            </div>
           </div>
         </div>
       </form>
