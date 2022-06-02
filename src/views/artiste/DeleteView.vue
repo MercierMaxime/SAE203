@@ -76,7 +76,7 @@ export default {
       // Obtenir le Storage
       const storage = getStorage();
 
-      const spaceRef = ref(storage, "artiste/" + this.artiste.photo);
+      const spaceRef = ref(storage, "artistes/" + this.artiste.photo);
       // Récupération de l'url complète de l'image
       getDownloadURL(spaceRef)
         .then((url) => {
@@ -96,7 +96,7 @@ export default {
       // Suppresson de l'image
       const storage = getStorage();
       // Référence du fichier de la photo
-      let docRef = ref(storage, "artiste/" + this.artiste.photo);
+      let docRef = ref(storage, "artistes/" + this.artiste.photo);
       // Suppression du fichier
       deleteObject(docRef);
 

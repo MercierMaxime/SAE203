@@ -77,7 +77,7 @@ export default {
       // Obtenir le Storage
       const storage = getStorage();
 
-      const spaceRef = ref(storage, "artiste/" + this.artiste.photo);
+      const spaceRef = ref(storage, "artistes/" + this.artiste.photo);
       // Récupération de l'url complète de l'image
       getDownloadURL(spaceRef)
         .then((url) => {
@@ -121,12 +121,12 @@ export default {
         // On supprime l'ancienne
         const storage = getStorage();
         // Référence du fichier
-        let docRef = ref(storage, "artiste/" + this.photoActuelle);
+        let docRef = ref(storage, "artistes/" + this.photoActuelle);
         // Suppression photo actuelle
         deleteObject(docRef);
         // création nouvelle photo
         // Référence de l'image à uploader
-        docRef = ref(storage, "artiste/" + this.artiste.photo);
+        docRef = ref(storage, "artistes/" + this.artiste.photo);
         await uploadString(docRef, this.imageData, "data_url").then((snapshot) => {
           console.log("Uploaded a base64 string", this.artiste.photo);
         });

@@ -93,7 +93,7 @@ export default {
       // Obtenir storage Firebase
       const storage = getStorage();
       // Référence de l'image à uploader
-      const refStorage = ref(storage, "artiste/" + this.artiste.photo);
+      const refStorage = ref(storage, "artistes/" + this.artiste.photo);
       // Upload de l'image sur le Cloud Storage
       await uploadString(refStorage, this.imageData, "data_url").then((snapshot) => {
         console.log("Uploaded a base64 string");
