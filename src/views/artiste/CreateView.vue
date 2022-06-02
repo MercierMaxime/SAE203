@@ -161,7 +161,7 @@ export default {
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">Pays</span>
+                    <span class="input-group-text">Interpréteur</span>
                   </div>
                   <input class="form-control" v-model="artiste.interpreteur" placeholder="Quel chanteur interprète t-il ?" key="required" />
                 </div>

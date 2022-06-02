@@ -115,7 +115,7 @@ export default {
       }
     },
 
-    async updateArtistes() {
+    async UpdateArtiste() {
       // Si l'image a été modifiée
       if (this.imgModifiee) {
         // On supprime l'ancienne
@@ -141,3 +141,78 @@ export default {
   },
 };
 </script>
+
+<template>
+  <Headerpart />
+
+  <div class="bg-gradient-to-bl from-indigo-500 to-sky-400 pt-6">
+    <div class="container">
+      <form enctype="multipart/form-data" @submit.prevent="UpdateArtiste">
+        <div class="card bg-dark">
+          <div class="card-header">
+            <h5 style="color: white">Mise à jour artiste</h5>
+          </div>
+
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <div class="text-center">
+                  <img class="preview img-fluid" :src="imageData" />
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Nom</span>
+                  </div>
+                  <input class="form-control" placeholder="Nom de la personne" v-model="artiste.nom" required />
+                </div>
+                <br />
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Prénom</span>
+                  </div>
+                  <input class="form-control" placeholder="Prénom de la personne" v-model="artiste.prenom" required />
+                </div>
+                <br />
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Photo</span>
+                  </div>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" ref="file" id="file" @change="previewImage" />
+                    <label class="custom-file-label" for="file">Sélectionner l'image</label>
+                  </div>
+                </div>
+                <br />
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Âge</span>
+                  </div>
+                  <input class="form-control" required v-model="artiste.age" placeholder="Âge de la personne" />
+                </div>
+                <br />
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Interpréteur</span>
+                  </div>
+                  <input class="form-control" required v-model="artiste.interpreteur" placeholder="Quel chanteur interprète t-il ?" />
+                </div>
+                <br />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button type="submit" class="btn btn-dark float-left">Modifier</button>
+            <button class="btn btn-dark float-right">
+              <RouterLink to="/artiste">Cancel</RouterLink>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <Footerpart />
+</template>
