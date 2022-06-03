@@ -6,7 +6,7 @@ import {
   getFirestore, // Obtenir le Firestore
   collection, // Utiliser une collection de documents
   doc, // Obtenir un document par son id
-  getDocs, // Obtenir la liste des documents d'une collection
+  getDoc, // Obtenir la liste des documents d'une collection
   addDoc, // Ajouter un document à une collection
   updateDoc, // Mettre à jour un document dans une collection
   deleteDoc, // Supprimer un document d'une collection
@@ -56,21 +56,6 @@ export default {
   },
 
   methods: {
-    async getArtistes() {
-      // Obtenir Firestore
-      const firestore = getFirestore();
-      // Base de données (collection)  document pays
-      const dbArtistes = collection(firestore, "artiste");
-      const q = query(dbArtistes, orderBy("nom", "asc"));
-
-      await onSnapshot(q, (snapshot) => {
-        this.ListeArtiste = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-        console.log("Liste des Artistes", this.ListeArtiste);
-      });
-    },
     previewImage: function (event) {
       this.file = this.$refs.file.files[0];
       this.artiste.photo = this.file.name;
@@ -93,7 +78,7 @@ export default {
 
       const docRef = doc(firestore, "artiste", id);
 
-      this.refartiste = await getDocs(docRef);
+      this.refartiste = await getDoc(docRef);
 
       if (this.refartiste.exists()) {
         // Si oui on récupère ses données
