@@ -56,7 +56,7 @@ export default {
       // notement pour filtrer, trier ... des données
       //orderBy permet de préciser sur quel élément trier, et dans quel ordre
       // ici le nom du pays par ordre croissant (asc)
-      const q = query(dbPays, orderBy("nom", "asc"));
+      const q = query(dbArtistes, orderBy("nom", "asc"));
       // Récupération de la liste des pays à partir de la query
       // La liste est synchronisée
       await onSnapshot(q, (snapshot) => {
@@ -130,14 +130,14 @@ export default {
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Nom</span>
                   </div>
-                  <input class="form-control" placeholder="Nom de la personne" v-model="artiste.nom" key="required" />
+                  <input class="form-control" placeholder="Nom de la personne" v-model="artiste.nom" required />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Prénom</span>
                   </div>
-                  <input v-model="artiste.prenom" class="form-control" placeholder="Prénom de la personne" key="required" />
+                  <input v-model="artiste.prenom" class="form-control" placeholder="Prénom de la personne" required />
                 </div>
                 <br />
                 <div class="input-group">
@@ -154,14 +154,14 @@ export default {
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Âge</span>
                   </div>
-                  <input class="form-control" v-model="artiste.age" placeholder="Âge de la personne" key="required" />
+                  <input class="form-control" v-model="artiste.age" placeholder="Âge de la personne" required />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Interpréteur</span>
                   </div>
-                  <input class="form-control" v-model="artiste.interpreteur" placeholder="Quel chanteur interprète t-il ?" key="required" />
+                  <input class="form-control" v-model="artiste.interpreteur" placeholder="Qui interprète t-il ?" required />
                 </div>
 
                 <div class="flex-cols-2 flex justify-center gap-5">

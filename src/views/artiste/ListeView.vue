@@ -72,78 +72,72 @@ export default {
   <Headerpart />
 
   <div class="bg-gradient-to-bl from-indigo-500 to-sky-400 pt-6">
-    <div class="card bg-light">
-      <div class="card-header">
-        <p class="text-center font-bold text-white sm:text-2xl lg:text-3xl xl:text-5xl">Liste des Artistes</p>
-        <span class="float-right" title="Créer un nouveau artiste">
-          <RouterLink to="/createArtiste">
-            <i class="fa fa-plus fa-lg text-light"></i>
-          </RouterLink>
-        </span>
-      </div>
+    <p class="text-center font-bold text-white sm:text-2xl lg:text-3xl xl:text-5xl">Liste des Artistes</p>
+    <span class="float-right" title="Créer un nouveau artiste">
+      <RouterLink to="/createArtiste">
+        <i class="fa fa-plus fa-lg text-light"></i>
+      </RouterLink>
+    </span>
 
-      <div class="card-body table-responsive">
-        <table class="text-light table text-white">
-          <thead>
-            <tr>
-              <th scope="col" class="text-center">Image</th>
-              <th scope="col">Nom</th>
-              <th scope="col">Prénom</th>
-              <th scope="col">Âge</th>
-              <th scope="col">Interpréteur de</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="part in ListeArtiste" :key="part.id">
-              <td class="text-center">
-                <img class="media-object imageSmall" :src="part.photo" :alt="part.prenom + ' ' + part.nom" />
-              </td>
-              <td>
-                <b>{{ part.nom }}</b>
-              </td>
-              <td>{{ part.prenom }}</td>
-              <td>{{ part.age }}</td>
-              <td>{{ part.interpreteur }}</td>
-              <td>
-                <span title="Supprimer l'artiste" class="mr-2">
-                  <RouterLink :to="{ name: 'DeleteArtiste', params: { id: part.id } }">
-                    <i class="fa fa-times fa-lg text-light"></i>
-                  </RouterLink>
-                </span>
-                <span title="Modifier l'artiste" class="mr-2">
-                  <RouterLink :to="{ name: 'UpdateArtiste', params: { id: part.id } }">
-                    <i class="fa fa-edit fa-lg text-light"></i>
-                  </RouterLink>
-                </span>
-              </td>
-            </tr>
-          </tbody>
+    <div class="card-body table-responsive">
+      <table class="text-light table text-white">
+        <thead>
+          <tr>
+            <th scope="col" class="text-center">Image</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Âge</th>
+            <th scope="col">Interpréteur de</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="part in ListeArtiste" :key="part.id">
+            <td class="text-center">
+              <img class="media-object imageSmall" :src="part.photo" :alt="part.prenom + ' ' + part.nom" />
+            </td>
+            <td>
+              <b>{{ part.nom }}</b>
+            </td>
+            <td>{{ part.prenom }}</td>
+            <td>{{ part.age }}</td>
+            <td>{{ part.interpreteur }}</td>
+            <td>
+              <span title="Supprimer l'artiste" class="mr-2">
+                <RouterLink :to="{ name: 'DeleteArtiste', params: { id: part.id } }">
+                  <i class="fa fa-times fa-lg text-light"></i>
+                </RouterLink>
+              </span>
+              <span title="Modifier l'artiste" class="mr-2">
+                <RouterLink :to="{ name: 'UpdateArtiste', params: { id: part.id } }">
+                  <i class="fa fa-edit fa-lg text-light"></i>
+                </RouterLink>
+              </span>
+            </td>
+          </tr>
+        </tbody>
 
-          <div class="flex-cols-3 flex justify-center gap-5">
-            <div class="flex flex-col py-10">
-              <RouterLink to="/createArtiste">
-                <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">Créer un artiste</button>
-              </RouterLink>
-            </div>
-
-            <div class="flex flex-col py-10">
-              <RouterLink to="/updateArtiste/:id">
-                <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">
-                  Modifier un artiste
-                </button>
-              </RouterLink>
-            </div>
-
-            <div class="flex flex-col py-10">
-              <RouterLink to="/deleteArtiste/:id">
-                <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">
-                  Supprimer un artiste
-                </button>
-              </RouterLink>
-            </div>
+        <div class="flex-cols-3 flex justify-center gap-5">
+          <div class="flex flex-col py-10">
+            <RouterLink to="/createArtiste">
+              <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">Créer un artiste</button>
+            </RouterLink>
           </div>
-        </table>
-      </div>
+
+          <div class="flex flex-col py-10">
+            <RouterLink to="/updateArtiste/:id">
+              <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">Modifier un artiste</button>
+            </RouterLink>
+          </div>
+
+          <div class="flex flex-col py-10">
+            <RouterLink to="/deleteArtiste/:id">
+              <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">
+                Supprimer un artiste
+              </button>
+            </RouterLink>
+          </div>
+        </div>
+      </table>
     </div>
   </div>
   <Footerpart />

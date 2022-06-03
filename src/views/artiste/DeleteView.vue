@@ -149,7 +149,7 @@ export default {
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Interpréteur</span>
                   </div>
-                  <input class="form-control" required v-model="artiste.interpreteur" placeholder="Quel chanteur interprète t-il ?" />
+                  <input class="form-control" required v-model="artiste.interpreteur" placeholder="Qui interprète t-il ?" />
                 </div>
                 <br />
               </div>
