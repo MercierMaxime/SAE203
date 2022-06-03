@@ -7,10 +7,8 @@ import {
   collection,
   doc,
   getDoc,
-  getDocs,
   addDoc,
   updateDoc,
-  setDoc,
   deleteDoc,
   onSnapshot,
   query,
@@ -18,15 +16,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
 
 // Storage
-import {
-  getStorage,
-  ref,
-  getDownloadURL,
-  uploadBytes,
-  uploadString,
-  deleteObject,
-  listAll,
-} from "https://www.gstatic.com/firebasejs/9.8.2/firebase-storage.js";
+import { getStorage, ref, getDownloadURL, uploadString, deleteObject } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-storage.js";
 
 export default {
   name: "DeleteView",

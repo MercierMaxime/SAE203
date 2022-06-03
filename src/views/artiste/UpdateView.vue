@@ -20,7 +20,8 @@ import {
   getStorage, // Obtenir le Cloud Storage
   ref, // Pour créer une référence à un fichier à uploader
   getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
-  uploadString, // Permet d'uploader sur le Cloud Storage une image en Base64
+  uploadString,
+  deleteObject, // Permet d'uploader sur le Cloud Storage une image en Base64
 } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-storage.js";
 
 export default {
@@ -52,7 +53,6 @@ export default {
 
     this.getArtistes(this.$route.params.id);
     // Appel de la liste des pays
-    this.getArtistes();
   },
 
   methods: {
@@ -61,11 +61,30 @@ export default {
       const firestore = getFirestore();
       // Base de données (collection)  document pays
       const dbArtistes = collection(firestore, "artiste");
-
       const q = query(dbArtistes, orderBy("nom", "asc"));
+
       await onSnapshot(q, (snapshot) => {
-        this.ListeArtiste = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+        this.ListeArtiste = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        console.log("Liste des Artistes", this.ListeArtiste);
       });
+    },
+    previewImage: function (event) {
+      this.file = this.$refs.file.files[0];
+      this.artiste.photo = this.file.name;
+
+      this.imgModifiee = true;
+
+      var input = event.target;
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = (e) => {
+          this.imageData = e.target.result;
+        };
+        reader.readAsDataURL(input.files[0]);
+      }
     },
 
     async getArtistes(id) {
@@ -134,7 +153,6 @@ export default {
         // Référence du fichier
         let docRef = ref(storage, "artistes/" + this.photoActuelle);
         // Suppression photo actuelle
-        console.log(docRef);
         deleteObject(docRef);
         // création nouvelle photo
         // Référence de l'image à uploader
@@ -148,7 +166,7 @@ export default {
 
       await updateDoc(doc(firestore, "artiste", this.$route.params.id), this.artiste);
 
-      this.$router.push("/artistes");
+      this.$router.push("/artiste");
     },
   },
 };

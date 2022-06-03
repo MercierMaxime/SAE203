@@ -99,12 +99,12 @@ export default {
             <td>
               <span title="Supprimer l'artiste" class="mr-2">
                 <RouterLink :to="{ name: 'DeleteArtiste', params: { id: artiste.id } }">
-                  <i class="fa fa-times fa-lg text-light"></i>
+                  <i class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3">Supprimer</i>
                 </RouterLink>
               </span>
               <span title="Modifier l'artiste" class="mr-2">
                 <RouterLink :to="{ name: 'UpdateArtiste', params: { id: artiste.id } }">
-                  <i class="fa fa-edit fa-lg text-light"></i>
+                  <i class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3">Modifier</i>
                 </RouterLink>
               </span>
             </td>
@@ -115,20 +115,6 @@ export default {
           <div class="flex flex-col py-10">
             <RouterLink to="/createArtiste">
               <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">Créer un artiste</button>
-            </RouterLink>
-          </div>
-
-          <div class="flex flex-col py-10">
-            <RouterLink to="/updateArtiste/:id">
-              <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">Modifier un artiste</button>
-            </RouterLink>
-          </div>
-
-          <div class="flex flex-col py-10">
-            <RouterLink to="/deleteArtiste/:id">
-              <button type="submit" class="relative flex flex-col rounded-lg bg-[#322e88] px-5 py-3 text-white">
-                Supprimer un artiste
-              </button>
             </RouterLink>
           </div>
         </div>
