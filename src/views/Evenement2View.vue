@@ -102,56 +102,6 @@ export default {
       </div></RouterLink
     >
 
-    <p class="px-16 pb-10 pt-20 text-center font-helvetica font-bold sm:text-xl lg:text-3xl xl:text-5xl">Biographie :</p>
-
-    <div class="relative m-auto mt-16 flex w-4/5 flex-col items-center justify-center pb-10">
-      <img src="../components/img/Roger_GUICHARD.png" class="flex-grow self-stretch rounded-tl-[25px] rounded-tr-[25px] object-cover" />
-      <div
-        class="
-          relative
-          flex flex-grow flex-col
-          items-center
-          justify-center
-          gap-5
-          self-stretch
-          rounded-bl-xl rounded-br-xl
-          bg-[#322e88]/60
-          px-1.5
-          py-2
-        "
-      >
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-2xl text-white">Roger GUICHARD :</span>
-        </p>
-
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-base text-white">Né à Potiers, France</span>
-        </p>
-
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-base text-white">Age : 32 ans </span>
-        </p>
-
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-base text-white"
-            >Formation chanteur lyrique (Spécialité : Techniques de chant)
-          </span>
-        </p>
-
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-base text-white">Chanteur depuis 10 ans </span>
-        </p>
-
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-base text-white">Interpréteur de Charles AZNAVOUR </span>
-        </p>
-
-        <p class="flex-grow self-stretch text-center text-2xl">
-          <span class="flex-grow self-stretch text-center text-xl font-bold text-white">En tournée prochainement à Aubenas, France</span>
-        </p>
-      </div>
-    </div>
-
     <div class="grid grid-cols-2 gap-10">
       <RouterLink to="/Evenement">
         <div class="relative mt-20 ml-10 flex items-center justify-center rounded-lg bg-white">

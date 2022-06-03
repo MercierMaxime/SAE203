@@ -136,7 +136,7 @@ export default {
 
       await updateDoc(doc(firestore, "artiste", this.$route.params.id), this.artiste);
 
-      this.$router.push("/artiste");
+      this.$router.push("/artistes");
     },
   },
 };
@@ -164,14 +164,14 @@ export default {
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Nom</span>
                   </div>
-                  <input class="form-control" placeholder="Nom de la personne" v-model="artiste.nom" required />
+                  <input class="form-control" placeholder="Nom de l'artiste" v-model="artiste.nom" required />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Prénom</span>
                   </div>
-                  <input class="form-control" placeholder="Prénom de la personne" v-model="artiste.prenom" required />
+                  <input class="form-control" placeholder="Prénom de l'artiste" v-model="artiste.prenom" required />
                 </div>
                 <br />
                 <div class="input-group">
@@ -179,7 +179,7 @@ export default {
                     <span class="input-group-text text-white">Photo</span>
                   </div>
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input" ref="file" id="file" @change="previewImage" />
+                    <input type="file" class="custom-file-input h-60" ref="file" id="file" @change="previewImage" />
                     <label class="custom-file-label" for="file">Sélectionner l'image</label>
                   </div>
                 </div>
@@ -188,7 +188,7 @@ export default {
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Âge</span>
                   </div>
-                  <input class="form-control" required v-model="artiste.age" placeholder="Âge de la personne" />
+                  <input class="form-control" required v-model="artiste.age" placeholder="Âge de l'artiste" />
                 </div>
                 <br />
                 <div class="input-group">

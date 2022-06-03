@@ -119,7 +119,7 @@ export default {
             <div class="row">
               <div class="col-6">
                 <div class="text-center">
-                  <img class="preview img-fluid" :src="photoActuelle" />
+                  <img class="preview img-fluid h-60" :src="photoActuelle" />
                 </div>
               </div>
 
@@ -128,21 +128,21 @@ export default {
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Nom</span>
                   </div>
-                  <input class="form-control" required placeholder="Nom de la personne" v-model="artiste.nom" />
+                  <input class="form-control" required placeholder="Nom de l'artiste " v-model="artiste.nom" />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Prénom</span>
                   </div>
-                  <input class="form-control" required placeholder="Prénom de la personne" v-model="artiste.prenom" />
+                  <input class="form-control" required placeholder="Prénom de l'artiste'" v-model="artiste.prenom" />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Âge</span>
                   </div>
-                  <input class="form-control" required v-model="artiste.age" placeholder="Âge de la personne" />
+                  <input class="form-control" required v-model="artiste.age" placeholder="Âge de l'artiste" />
                 </div>
                 <br />
                 <div class="input-group">

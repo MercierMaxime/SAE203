@@ -130,14 +130,14 @@ export default {
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Nom</span>
                   </div>
-                  <input class="form-control" placeholder="Nom de la personne" v-model="artiste.nom" required />
+                  <input class="form-control" placeholder="Nom de l'artiste" v-model="artiste.nom" required />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Prénom</span>
                   </div>
-                  <input v-model="artiste.prenom" class="form-control" placeholder="Prénom de la personne" required />
+                  <input v-model="artiste.prenom" class="form-control" placeholder="Prénom de l'artiste'" required />
                 </div>
                 <br />
                 <div class="input-group">
@@ -145,7 +145,7 @@ export default {
                     <span class="input-group-text text-white">Photo</span>
                   </div>
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input" ref="file" id="file" @change="previewImage" />
+                    <input type="file" class="custom-file-input h-60" ref="file" id="file" @change="previewImage" />
                     <label class="custom-file-label" for="file">Sélectionner l'image</label>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ export default {
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Âge</span>
                   </div>
-                  <input class="form-control" v-model="artiste.age" placeholder="Âge de la personne" required />
+                  <input class="form-control" v-model="artiste.age" placeholder="Âge de l'artiste " required />
                 </div>
                 <br />
                 <div class="input-group">

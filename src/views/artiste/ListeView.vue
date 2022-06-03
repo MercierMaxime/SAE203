@@ -46,17 +46,17 @@ export default {
       await onSnapshot(q, (snapshot) => {
         this.ListeArtiste = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
 
-        this.ListeArtiste.forEach(function (personne) {
+        this.ListeArtiste.forEach(function (artiste) {
           // Obtenir le Cloud Storage
           const storage = getStorage();
           // Récupération de l'image par son nom de fichier
-          const spaceRef = ref(storage, "artiste/" + personne.photo);
+          const spaceRef = ref(storage, "artistes/" + artiste.photo);
           // Récupération de l'url complète de l'image
           getDownloadURL(spaceRef)
             .then((url) => {
               // On remplace le nom du fichier
               // Par l'url complète de la photo
-              personne.photo = url;
+              artiste.photo = url;
             })
             .catch((error) => {
               console.log("erreur downloadUrl", error);
@@ -91,24 +91,24 @@ export default {
           </tr>
         </thead>
         <tbody>
-          <tr v-for="part in ListeArtiste" :key="part.id">
+          <tr v-for="artiste in ListeArtiste" :key="artiste.id">
             <td class="text-center">
-              <img class="media-object imageSmall" :src="part.photo" :alt="part.prenom + ' ' + part.nom" />
+              <img class="media-object imageSmall h-60" :src="artiste.photo" :alt="artiste.prenom + ' ' + artiste.nom" />
             </td>
             <td>
-              <b>{{ part.nom }}</b>
+              <b>{{ artiste.nom }}</b>
             </td>
-            <td>{{ part.prenom }}</td>
-            <td>{{ part.age }}</td>
-            <td>{{ part.interpreteur }}</td>
+            <td>{{ artiste.prenom }}</td>
+            <td>{{ artiste.age }}</td>
+            <td>{{ artiste.interpreteur }}</td>
             <td>
               <span title="Supprimer l'artiste" class="mr-2">
-                <RouterLink :to="{ name: 'DeleteArtiste', params: { id: part.id } }">
+                <RouterLink :to="{ name: 'DeleteArtiste', params: { id: artiste.id } }">
                   <i class="fa fa-times fa-lg text-light"></i>
                 </RouterLink>
               </span>
               <span title="Modifier l'artiste" class="mr-2">
-                <RouterLink :to="{ name: 'UpdateArtiste', params: { id: part.id } }">
+                <RouterLink :to="{ name: 'UpdateArtiste', params: { id: artiste.id } }">
                   <i class="fa fa-edit fa-lg text-light"></i>
                 </RouterLink>
               </span>
