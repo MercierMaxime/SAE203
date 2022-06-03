@@ -3,13 +3,24 @@ import Headerpart from "../../components/Header.vue";
 import Footerpart from "../../components/Footer.vue";
 
 import {
-  getStorage,
-  ref,
-  getDownloadURL,
-  uploadBytes,
-  uploadString,
-  deleteObject,
-  listAll,
+  getFirestore, // Obtenir le Firestore
+  collection, // Utiliser une collection de documents
+  doc, // Obtenir un document par son id
+  getDocs, // Obtenir la liste des documents d'une collection
+  addDoc, // Ajouter un document à une collection
+  updateDoc, // Mettre à jour un document dans une collection
+  deleteDoc, // Supprimer un document d'une collection
+  onSnapshot, // Demander une liste de documents d'une collection, en les synchronisant
+  query, // Permet d'effectuer des requêtes sur Firestore
+  orderBy, // Permet de demander le tri d'une requête query
+} from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
+
+// Cloud Storage : import des fonctions
+import {
+  getStorage, // Obtenir le Cloud Storage
+  ref, // Pour créer une référence à un fichier à uploader
+  getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
+  uploadString, // Permet d'uploader sur le Cloud Storage une image en Base64
 } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-storage.js";
 
 export default {
@@ -123,6 +134,7 @@ export default {
         // Référence du fichier
         let docRef = ref(storage, "artistes/" + this.photoActuelle);
         // Suppression photo actuelle
+        console.log(docRef);
         deleteObject(docRef);
         // création nouvelle photo
         // Référence de l'image à uploader

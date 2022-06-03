@@ -128,14 +128,14 @@ export default {
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Nom</span>
                   </div>
-                  <input class="form-control" required placeholder="Nom de l'artiste " v-model="artiste.nom" />
+                  <input class="form-control" required placeholder="Nom de l'artiste" v-model="artiste.nom" />
                 </div>
                 <br />
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text text-white">Prénom</span>
                   </div>
-                  <input class="form-control" required placeholder="Prénom de l'artiste'" v-model="artiste.prenom" />
+                  <input class="form-control" required placeholder="Prénom de l'artiste" v-model="artiste.prenom" />
                 </div>
                 <br />
                 <div class="input-group">
