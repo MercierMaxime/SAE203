@@ -119,7 +119,7 @@ export default {
             <div class="row">
               <div class="col-6">
                 <div class="text-center">
-                  <img class="preview img-fluid h-60" :src="photoActuelle" />
+                  <img class="preview img-fluid" :src="photoActuelle" />
                 </div>
               </div>
 

@@ -74,7 +74,7 @@ export default {
 
       const docRef = doc(firestore, "artiste", id);
 
-      this.refartiste = await getDoc(docRef);
+      this.refartiste = await getDocs(docRef);
 
       if (this.refartiste.exists()) {
         // Si oui on récupère ses données
@@ -191,7 +191,7 @@ export default {
                     <span class="input-group-text text-white">Photo</span>
                   </div>
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input h-60" ref="file" id="file" @change="previewImage" />
+                    <input type="file" class="custom-file-input" ref="file" id="file" @change="previewImage" />
                     <label class="custom-file-label" for="file">Sélectionner l'image</label>
                   </div>
                 </div>

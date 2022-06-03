@@ -73,13 +73,8 @@ export default {
 
   <div class="bg-gradient-to-bl from-indigo-500 to-sky-400 pt-6">
     <p class="text-center font-bold text-white sm:text-2xl lg:text-3xl xl:text-5xl">Liste des Artistes</p>
-    <span class="float-right" title="Créer un nouveau artiste">
-      <RouterLink to="/createArtiste">
-        <i class="fa fa-plus fa-lg text-light"></i>
-      </RouterLink>
-    </span>
 
-    <div class="card-body table-responsive">
+    <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
       <table class="text-light table text-white">
         <thead>
           <tr>
@@ -93,7 +88,7 @@ export default {
         <tbody>
           <tr v-for="artiste in ListeArtiste" :key="artiste.id">
             <td class="text-center">
-              <img class="media-object imageSmall h-60" :src="artiste.photo" :alt="artiste.prenom + ' ' + artiste.nom" />
+              <img class="media-object imageSmall m-auto h-60" :src="artiste.photo" :alt="artiste.prenom + ' ' + artiste.nom" />
             </td>
             <td>
               <b>{{ artiste.nom }}</b>
